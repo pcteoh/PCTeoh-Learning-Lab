@@ -746,45 +746,6 @@ nav {
 .manifesto-attr::before,
 .manifesto-attr::after { content: ''; display: block; width: 40px; height: 1px; background: rgba(184,124,79,0.3); }
 
-/* ============================================================
-   PRACTITIONER FRAMEWORK
-============================================================ */
-.framework { background: var(--cream-dark); padding: 96px 80px; }
-.framework .section-title { color: var(--espresso); }
-
-.fw-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 24px; max-width: 1200px; margin: 56px auto 0;
-}
-
-.fw-card {
-  background: var(--cream-bg); border: 1px solid rgba(184,124,79,0.12);
-  padding: 40px 32px; display: flex; flex-direction: column; gap: 14px;
-  position: relative; overflow: hidden;
-  transition: border-color 0.3s, transform 0.3s;
-}
-.fw-card:hover { border-color: rgba(184,124,79,0.35); transform: translateY(-4px); }
-.fw-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
-.lvl1::before { background: var(--stone); }
-.lvl2::before { background: var(--cognac); }
-.lvl3::before { background: var(--amber); }
-
-.fw-level {
-  font-family: var(--sans); font-size: 8px; font-weight: 600;
-  letter-spacing: 3px; text-transform: uppercase; color: var(--cognac);
-}
-
-.fw-dot { width: 10px; height: 10px; border-radius: 50%; }
-.lvl1 .fw-dot { background: var(--stone); }
-.lvl2 .fw-dot { background: var(--cognac); }
-.lvl3 .fw-dot { background: var(--amber); }
-
-.fw-title {
-  font-family: var(--serif); font-size: 22px; font-weight: 400;
-  color: var(--espresso); line-height: 1.2;
-}
-
-.fw-desc { font-family: var(--mono); font-size: 12px; line-height: 1.8; color: var(--stone); }
 
 /* ============================================================
    ABOUT
@@ -1270,38 +1231,9 @@ footer {
   <div class="manifesto-attr">PC Teoh &middot; Founding Practitioner</div>
 </section>
 
-<!-- ============================================================
-     11. PRACTITIONER CAPABILITY FRAMEWORK
-============================================================ -->
-<section class="framework">
-  <div style="max-width:1200px; margin:0 auto 56px;">
-    <div class="section-tag">Practitioner Capability Framework</div>
-    <h2 class="section-title">Three levels of capability</h2>
-  </div>
-  <div class="fw-grid">
-    <div class="fw-card lvl1">
-      <div class="fw-level">Level 1</div>
-      <div class="fw-dot"></div>
-      <div class="fw-title">Operator</div>
-      <div class="fw-desc">Executes defined actions reliably. Understands the task. Delivers consistent output within a structured process.</div>
-    </div>
-    <div class="fw-card lvl2">
-      <div class="fw-level">Level 2</div>
-      <div class="fw-dot"></div>
-      <div class="fw-title">Practitioner</div>
-      <div class="fw-desc">Adapts actions to context. Reads gaps. Makes judgement calls. Owns the outcome, not just the activity.</div>
-    </div>
-    <div class="fw-card lvl3">
-      <div class="fw-level">Level 3</div>
-      <div class="fw-dot"></div>
-      <div class="fw-title">System Thinker</div>
-      <div class="fw-desc">Designs the learning system itself. Sees the organisation as a performance machine and knows how to tune it.</div>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================================
-     12. ABOUT
+     11. ABOUT
 ============================================================ -->
 <section id="about">
   <div class="about-wrap">
@@ -1335,7 +1267,7 @@ footer {
 </section>
 
 <!-- ============================================================
-     13. CONTACT CTA
+     12. CONTACT CTA
 ============================================================ -->
 <section class="contact-cta" id="contact">
   <div class="cta-inner">
@@ -1353,7 +1285,7 @@ footer {
 </section>
 
 <!-- ============================================================
-     14. FOOTER
+     13. FOOTER
 ============================================================ -->
 <footer>
   <div class="footer-left">
