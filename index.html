@@ -397,7 +397,7 @@ nav {
    HERO
 ============================================================ */
 .hero {
-  min-height: 88vh;
+  min-height: 82vh;
   display: grid; grid-template-columns: 1fr 1fr;
   align-items: center; gap: 60px;
   padding: 80px;
@@ -440,10 +440,10 @@ nav {
 .hero-sub {
   font-family: var(--mono);
   font-size: 13px; line-height: 1.8;
-  color: var(--stone); max-width: 420px; margin-bottom: 36px;
+  color: var(--stone); max-width: 440px; margin-bottom: 36px;
 }
 
-.hero-cta-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.hero-cta-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 
 .btn-primary {
   font-family: var(--sans);
@@ -454,6 +454,17 @@ nav {
   text-decoration: none; transition: background 0.25s; display: inline-block;
 }
 .btn-primary:hover { background: var(--cognac); }
+
+.btn-secondary {
+  font-family: var(--sans);
+  font-size: 9px; font-weight: 600;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--espresso); background: transparent;
+  border: 1px solid var(--cognac);
+  padding: 13px 27px; border-radius: 2px;
+  text-decoration: none; transition: background 0.25s, color 0.25s; display: inline-block;
+}
+.btn-secondary:hover { background: var(--cognac); color: var(--cream-bg); }
 
 .btn-ghost {
   font-family: var(--sans);
@@ -548,8 +559,217 @@ nav {
   line-height: 1.2; letter-spacing: -0.5px;
 }
 
+.section-intro {
+  font-family: var(--mono); font-size: 13px; line-height: 1.8;
+  color: var(--stone); max-width: 560px; margin-top: 16px;
+}
+
 /* ============================================================
-   DIGITIZATION ENTRY
+   THE VISION — FOUR BUSINESS CARDS
+============================================================ */
+.vision { padding: 96px 80px; }
+
+.vision-head { max-width: 1200px; margin: 0 auto 56px; }
+
+.vision-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2px; max-width: 1200px; margin: 0 auto;
+}
+
+.vision-card {
+  padding: 36px 26px;
+  border: 1px solid rgba(184,124,79,0.15);
+  display: flex; flex-direction: column; gap: 12px;
+  transition: border-color 0.3s, background 0.3s, transform 0.3s;
+  position: relative;
+  background: var(--cream-bg);
+}
+.vision-card:hover { border-color: rgba(184,124,79,0.4); background: rgba(184,124,79,0.04); transform: translateY(-3px); }
+
+.vision-card.is-active { border-color: rgba(184,124,79,0.25); }
+
+.vision-status {
+  font-family: var(--sans); font-size: 7px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--sage);
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.vision-status::before {
+  content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sage);
+}
+.vision-status.is-soon { color: var(--stone); }
+.vision-status.is-soon::before { background: var(--stone); }
+
+.vision-year {
+  font-family: var(--sans); font-size: 7.5px; font-weight: 500;
+  letter-spacing: 2px; text-transform: uppercase; color: rgba(184,124,79,0.5);
+}
+
+.vision-name {
+  font-family: var(--serif); font-size: 19px; font-weight: 400;
+  color: var(--espresso); line-height: 1.25;
+}
+
+.vision-desc {
+  font-family: var(--mono); font-size: 11.5px; line-height: 1.75; color: var(--stone);
+  flex-grow: 1;
+}
+
+.vision-cta {
+  font-family: var(--sans); font-size: 8.5px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  text-decoration: none; margin-top: 6px;
+  padding-bottom: 3px;
+}
+.vision-cta.is-live { color: var(--espresso); border-bottom: 1px solid var(--cognac); align-self: flex-start; transition: color 0.2s, border-color 0.2s; }
+.vision-cta.is-live:hover { color: var(--cognac); }
+.vision-cta.is-soon { color: rgba(125,107,92,0.55); cursor: default; align-self: flex-start; }
+
+/* ============================================================
+   FOR ENGINEERS
+============================================================ */
+.community { padding: 96px 80px; background: var(--cream-dark); }
+
+.community-wrap {
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px; align-items: start; max-width: 1200px; margin: 0 auto;
+}
+
+.community-headline {
+  font-family: var(--serif);
+  font-size: clamp(26px, 3vw, 36px); font-weight: 300;
+  line-height: 1.3; color: var(--espresso); letter-spacing: -0.5px; margin-bottom: 20px;
+}
+.community-headline em { font-style: italic; color: var(--cognac); }
+
+.community-body {
+  font-family: var(--mono); font-size: 13px; line-height: 1.85;
+  color: var(--stone); margin-bottom: 28px;
+}
+
+.stack-label {
+  font-family: var(--sans); font-size: 8px; font-weight: 500;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--cognac);
+  margin-bottom: 14px;
+}
+
+.stack-chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
+
+.stack-chip {
+  font-family: var(--sans); font-size: 10px; font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--espresso); background: var(--cream-bg);
+  border: 1px solid rgba(184,124,79,0.2);
+  padding: 8px 16px; border-radius: 30px;
+}
+
+.community-panel {
+  border: 1px solid rgba(184,124,79,0.2);
+  background: var(--cream-bg);
+  padding: 40px 32px;
+}
+
+.panel-eyebrow {
+  font-family: var(--sans); font-size: 8px; font-weight: 500;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--cognac); margin-bottom: 14px;
+}
+
+.panel-list { list-style: none; display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; }
+
+.panel-list li {
+  font-family: var(--mono); font-size: 12.5px; line-height: 1.7; color: var(--bark);
+  padding-left: 18px; position: relative;
+}
+.panel-list li::before {
+  content: '—'; position: absolute; left: 0; color: var(--cognac);
+}
+
+/* ============================================================
+   FOR ORGANISATIONS
+============================================================ */
+.org { padding: 96px 80px; }
+
+.org-wrap {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: start;
+  max-width: 1200px; margin: 0 auto;
+}
+
+.org-headline {
+  font-family: var(--serif);
+  font-size: clamp(28px, 3vw, 38px); font-weight: 300;
+  line-height: 1.25; color: var(--espresso); letter-spacing: -0.5px;
+}
+.org-headline em { font-style: italic; color: var(--cognac); }
+
+.org-body {
+  font-family: var(--mono); font-size: 13px; line-height: 1.85;
+  color: var(--stone); margin-bottom: 18px;
+}
+
+.org-pivot {
+  border-left: 2px solid var(--cognac);
+  padding: 16px 20px;
+  background: rgba(184,124,79,0.06);
+  border-radius: 0 4px 4px 0;
+  margin-top: 24px; margin-bottom: 28px;
+}
+.org-pivot p {
+  font-family: var(--mono); font-size: 13px;
+  line-height: 1.8; color: var(--bark);
+}
+.org-pivot strong { color: var(--espresso); font-weight: 500; }
+
+.org-traits { display: flex; flex-direction: column; gap: 22px; }
+
+.org-trait { display: flex; gap: 16px; align-items: flex-start; }
+
+.trait-mark {
+  font-family: var(--serif); font-size: 13px; font-weight: 300;
+  color: var(--cognac); border: 1px solid rgba(184,124,79,0.3);
+  border-radius: 2px; width: 30px; height: 30px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.trait-text-name {
+  font-family: var(--serif); font-size: 15px; font-weight: 400; color: var(--espresso);
+  margin-bottom: 4px;
+}
+
+.trait-text-desc {
+  font-family: var(--mono); font-size: 12px; line-height: 1.7; color: var(--stone);
+}
+
+/* ============================================================
+   FRAMEWORK LICENCE
+============================================================ */
+.licence { padding: 90px 80px; }
+
+.licence-box {
+  max-width: 900px; margin: 0 auto;
+  border: 1px solid rgba(184,124,79,0.25);
+  padding: 56px 64px;
+  text-align: center;
+  position: relative;
+}
+.licence-box::before {
+  content: ''; position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+  width: 60px; height: 2px; background: linear-gradient(90deg, var(--cognac), var(--honey-gold));
+}
+
+.licence-tag {
+  font-family: var(--sans); font-size: 9px; font-weight: 500;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--cognac); margin-bottom: 18px;
+}
+
+.licence-headline {
+  font-family: var(--serif); font-size: clamp(22px, 2.6vw, 30px); font-weight: 300;
+  line-height: 1.4; color: var(--espresso); letter-spacing: -0.3px; margin-bottom: 24px;
+}
+.licence-headline em { font-style: italic; color: var(--cognac); }
+
+/* ============================================================
+   DIGITIZATION ENTRY (legacy — retained for potential reuse)
 ============================================================ */
 .entry-outer { padding: 96px 80px; }
 
@@ -885,6 +1105,14 @@ footer {
   .nav-links { display: none; }
   .hero { grid-template-columns: 1fr; padding: 60px 24px; min-height: auto; }
   .hero-visual { display: none; }
+  .vision { padding: 60px 24px; }
+  .vision-grid { grid-template-columns: 1fr 1fr; }
+  .community { padding: 60px 24px; }
+  .community-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .org { padding: 60px 24px; }
+  .org-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .licence { padding: 60px 24px; }
+  .licence-box { padding: 40px 28px; }
   .entry-outer { padding: 60px 24px; }
   .entry-wrap { grid-template-columns: 1fr; gap: 40px; }
   .doctrine { padding: 60px 24px; }
@@ -896,13 +1124,15 @@ footer {
   .brand-strip { padding: 48px 24px; gap: 40px; }
   .brand-sep { display: none; }
   .manifesto { padding: 80px 24px; }
-  .framework { padding: 60px 24px; }
-  .fw-grid { grid-template-columns: 1fr; }
   .about-wrap { padding: 60px 24px; }
   .about { grid-template-columns: 1fr; }
   .about-portrait { display: none; }
   .contact-cta { padding: 80px 24px; }
   footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 640px) {
+  .vision-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -1008,9 +1238,10 @@ footer {
 <nav>
   <a href="#" class="nav-logo">PC<span>Teoh</span> Learning Lab</a>
   <ul class="nav-links">
-    <li><a href="#doctrine">Doctrine</a></li>
-    <li><a href="#framework">A2P</a></li>
-    <li><a href="#ecosystem">Ecosystem</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#organisations">Organisations</a></li>
+    <li><a href="#framework">Methodology</a></li>
     <li><a href="#about">About</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Start a Conversation</a>
@@ -1023,15 +1254,15 @@ footer {
   <div class="hero-text">
     <div class="hero-eyebrow">PCTeoh Learning Lab</div>
     <h1 class="hero-headline">
-      Work is already happening.<br>
-      <em>Make it visible.</em>
+      Make work visible.<br>
+      <em>Develop talent deliberately.</em>
     </h1>
     <p class="hero-sub">
-      Learning happens in every organization, every single day: engineers solve problems, operators adapt, and teams improve. Yet, this vital knowledge often remains undocumented, unmeasured, and unrecognized. We capture this hidden value, using digitization and AI technology to turn everyday experience into your greatest asset.
+      Learning happens in every organisation, every single day: engineers solve problems, operators adapt, teams improve. We turn that everyday experience into a visible, measurable, deliberate system — for the organisations that run on it, and the engineers who build it.
     </p>
     <div class="hero-cta-row">
-      <a href="#contact" class="btn-primary">Start a Conversation</a>
-      <a href="#framework" class="btn-ghost">See the A2P Framework</a>
+      <a href="#organisations" class="btn-primary">For Organisations</a>
+      <a href="#community" class="btn-secondary">For Engineers — Join Community</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -1075,30 +1306,137 @@ footer {
 </div>
 
 <!-- ============================================================
-     05. ENTRY — THE HIDDEN CHALLENGE
+     05. THE VISION — FOUR WAYS TO WORK TOGETHER
 ============================================================ -->
-<section class="entry-outer">
-  <div class="entry-wrap">
-    <div>
-      <div class="entry-eyebrow">The catalyst for change</div>
-      <h2 class="entry-headline">
-        Most organisations already have learning.<br>
-        Make it <em>visible.</em>
-      </h2>
+<section class="vision" id="vision">
+  <div class="vision-head">
+    <div class="section-tag">The Vision</div>
+    <h2 class="section-title">Four ways PCTeoh Learning Lab works with you</h2>
+    <p class="section-intro">Depending on where you are and what you need — from a single conversation to a system your organisation runs on.</p>
+  </div>
+  <div class="vision-grid">
+
+    <div class="vision-card is-active">
+      <span class="vision-status">Open now</span>
+      <span class="vision-year">Ongoing</span>
+      <div class="vision-name">Knowledge Community</div>
+      <p class="vision-desc">Engineers and operators building ePortfolios, sharing real work, and becoming the IOL lead inside their own organisation.</p>
+      <a href="#community" class="vision-cta is-live">Join the community</a>
     </div>
+
+    <div class="vision-card">
+      <span class="vision-status is-soon">In development</span>
+      <span class="vision-year">Next up</span>
+      <div class="vision-name">Coaching &amp; Courses</div>
+      <p class="vision-desc">Structured IOL coaching and self-paced courses for engineers who want to build the framework into their own practice.</p>
+      <span class="vision-cta is-soon">In development</span>
+    </div>
+
+    <div class="vision-card">
+      <span class="vision-status is-soon">Coming soon</span>
+      <span class="vision-year">On the roadmap</span>
+      <div class="vision-name">AI Platform — IOL Assistant</div>
+      <p class="vision-desc">An AI assistant trained on the A2P framework, guiding documentation, measurement, and recognition inside the daily workflow.</p>
+      <span class="vision-cta is-soon">Coming soon</span>
+    </div>
+
+    <div class="vision-card is-active">
+      <span class="vision-status">Open now</span>
+      <span class="vision-year">Ongoing</span>
+      <div class="vision-name">Premium Consulting</div>
+      <p class="vision-desc">Remote-first, engineer-led IOL implementation for manufacturing and engineering operations with a real capability gap.</p>
+      <a href="#organisations" class="vision-cta is-live">Enquire</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     06. FOR ENGINEERS — COMMUNITY
+============================================================ -->
+<section class="community" id="community">
+  <div class="community-wrap">
     <div>
-      <p class="entry-body">Engineers solve problems every day. Operators adapt. Teams improve processes. Valuable learning happens continuously inside the workflow.</p>
-      <p class="entry-body">Yet very little of this learning becomes visible, structured, recognised, or reusable. Capability grows, but organisations often cannot see where it comes from or how to sustain it.</p>
-      <p class="entry-body">The challenge is not creating learning. The challenge is making workplace learning visible.</p>
-      <div class="entry-pivot">
+      <div class="entry-eyebrow">For Engineers</div>
+      <h2 class="community-headline">
+        Build your ePortfolio.<br>
+        <em>Become the IOL lead</em> in your organisation.
+      </h2>
+      <p class="community-body">
+        Your daily work is already evidence of your capability. The community gives you the structure to document it, the peers to test it against, and the recognition it deserves — inside a remote-first practice that runs on the same platforms you already use.
+      </p>
+      <div class="stack-label">Platform Stack</div>
+      <div class="stack-chips">
+        <span class="stack-chip">Discord</span>
+        <span class="stack-chip">Notion</span>
+        <span class="stack-chip">Dify</span>
+        <span class="stack-chip">MS Teams</span>
+      </div>
+      <a href="#contact" class="btn-primary">Join the Community</a>
+    </div>
+    <div class="community-panel">
+      <div class="panel-eyebrow">What you get</div>
+      <ul class="panel-list">
+        <li>An ePortfolio structured around the A2P framework — action documented into measurable performance.</li>
+        <li>A peer network of engineers and operators making their own work visible, in the open.</li>
+        <li>A pathway from community member to IOL lead inside your own organisation.</li>
+        <li>First access to coaching, courses, and the IOL Assistant as each becomes available.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     07. FOR ORGANISATIONS
+============================================================ -->
+<section class="org" id="organisations">
+  <div class="org-wrap">
+    <div>
+      <div class="entry-eyebrow">For Organisations</div>
+      <h2 class="org-headline">
+        Remote-first IOL implementation.<br>
+        <em>Engineer-led.</em> Measurable. Scalable.
+      </h2>
+      <p class="org-body">Engineers solve problems every day. Operators adapt. Teams improve processes. Valuable learning happens continuously inside the workflow — yet very little of it becomes visible, structured, recognised, or reusable.</p>
+      <div class="org-pivot">
         <p>PCTeoh Learning Lab meets you at this challenge — and shows you <strong>what you can build beyond it.</strong> A workforce that learns inside the work itself. Talent developed where performance actually happens.</p>
+      </div>
+    </div>
+    <div class="org-traits">
+      <div class="org-trait">
+        <div class="trait-mark">R</div>
+        <div>
+          <div class="trait-text-name">Remote-first</div>
+          <div class="trait-text-desc">Delivered wherever your team already works. No dependency on a physical classroom or a fixed location.</div>
+        </div>
+      </div>
+      <div class="org-trait">
+        <div class="trait-mark">E</div>
+        <div>
+          <div class="trait-text-name">Engineer-led</div>
+          <div class="trait-text-desc">Built and delivered by a practitioner with 19 years inside engineering operations — not an outside training vendor.</div>
+        </div>
+      </div>
+      <div class="org-trait">
+        <div class="trait-mark">M</div>
+        <div>
+          <div class="trait-text-name">Measurable</div>
+          <div class="trait-text-desc">Every implementation runs on the A2P framework: defined targets, tracked actions, measured gaps, and refined performance.</div>
+        </div>
+      </div>
+      <div class="org-trait">
+        <div class="trait-mark">S</div>
+        <div>
+          <div class="trait-text-name">Scalable</div>
+          <div class="trait-text-desc">What starts as one team's implementation is designed to extend into a system the wider organisation can run on.</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================
-     06. CORE DOCTRINE
+     08. CORE DOCTRINE
 ============================================================ -->
 <section class="doctrine" id="doctrine">
   <div style="text-align:center; max-width:1200px; margin:0 auto 56px;">
@@ -1130,7 +1468,7 @@ footer {
 </section>
 
 <!-- ============================================================
-     07. A2P FRAMEWORK
+     09. A2P FRAMEWORK
 ============================================================ -->
 <section class="a2p-section" id="framework">
   <div style="text-align:center; max-width:1200px; margin:0 auto 56px;">
@@ -1172,7 +1510,7 @@ footer {
 </section>
 
 <!-- ============================================================
-     08. THREE ENTRY POINTS
+     10. THREE ENTRY POINTS
 ============================================================ -->
 <section class="entry-points" id="ecosystem">
   <div style="max-width:1200px; margin:0 auto 56px;">
@@ -1202,7 +1540,7 @@ footer {
 </section>
 
 <!-- ============================================================
-     09. BRAND STRIP
+     11. BRAND STRIP
 ============================================================ -->
 <div class="brand-strip">
   <div class="brand-id">
@@ -1222,7 +1560,7 @@ footer {
 </div>
 
 <!-- ============================================================
-     10. MANIFESTO
+     12. MANIFESTO
 ============================================================ -->
 <section class="manifesto">
   <div class="manifesto-quote">
@@ -1231,9 +1569,21 @@ footer {
   <div class="manifesto-attr">PC Teoh &middot; Founding Practitioner</div>
 </section>
 
+<!-- ============================================================
+     13. THE FRAMEWORK LICENCE
+============================================================ -->
+<section class="licence">
+  <div class="licence-box">
+    <div class="licence-tag">The Framework Licence</div>
+    <h2 class="licence-headline">
+      IOL is available for <em>licensing</em> — to universities and organisations building their own internal capability systems.
+    </h2>
+    <a href="#contact" class="btn-secondary">Register Interest</a>
+  </div>
+</section>
 
 <!-- ============================================================
-     11. ABOUT
+     14. ABOUT
 ============================================================ -->
 <section id="about">
   <div class="about-wrap">
@@ -1267,7 +1617,7 @@ footer {
 </section>
 
 <!-- ============================================================
-     12. CONTACT CTA
+     15. CONTACT CTA
 ============================================================ -->
 <section class="contact-cta" id="contact">
   <div class="cta-inner">
@@ -1276,7 +1626,7 @@ footer {
       Let's make your<br>learning at work <em>visible.</em>
     </h2>
     <p class="cta-sub">
-      We are looking for manufacturing or engineering operations with a real capability gap — willing to work through it closely and say honestly what they find. The terms are simple. The access is direct. The work is real on both sides.
+      Organisations: we're looking for manufacturing or engineering operations with a real capability gap — willing to work through it closely and say honestly what they find. Engineers: the community is open now.
     </p>
     <a href="https://wa.me/60164139982" target="_blank" class="cta-contact">
       WhatsApp +60 16 413 9982
@@ -1285,11 +1635,11 @@ footer {
 </section>
 
 <!-- ============================================================
-     13. FOOTER
+     16. FOOTER
 ============================================================ -->
 <footer>
   <div class="footer-left">
-    PCTeoh Learning Lab, Malaysia<br>
+    PCTeoh Learning Lab, Malaysia. Based in Penang. Works everywhere.<br>
     CC BY-NC-SA 4.0 &middot; SSM Registered &middot; HRDC Provisionally Registered
   </div>
   <div class="footer-right">IOL &middot; A2P &middot; Grow at Work</div>
