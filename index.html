@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-<meta name="description" content="PCTeoh Learning Lab — Making workplace learning visible through Industry Oriented Learning (IOL) and the A2P framework.">
-<title>PCTeoh Learning Lab | Making Work Visible</title>
+<meta name="description" content="PCTeoh Learning Lab — Workplace as the Learning Origin, through Industry Oriented Learning (IOL) and the A2P framework.">
+<title>PCTeoh Learning Lab | Workplace as the Learning Origin</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 
 <style>
@@ -37,9 +37,6 @@ html { scroll-behavior: smooth; }
   --sans:       'Josefin Sans', sans-serif;
 }
 
-/* ============================================================
-   BODY & GRAIN TEXTURE
-============================================================ */
 body {
   background: var(--cream);
   color: var(--espresso);
@@ -56,9 +53,6 @@ body::before {
   z-index: 9999;
 }
 
-/* ============================================================
-   BUSINESS CARD SHOWCASE
-============================================================ */
 .card-showcase {
   background: #E9E2D6;
   padding: 56px 24px 64px;
@@ -86,9 +80,6 @@ body::before {
   font-weight: 500;
 }
 
-/* ============================================================
-   CARD LAYOUT
-============================================================ */
 .cards-row {
   display: flex;
   gap: 56px 80px;
@@ -131,9 +122,6 @@ body::before {
   box-shadow: 0 22px 38px rgba(0,0,0,0.18), 0 8px 14px rgba(0,0,0,0.1);
 }
 
-/* ============================================================
-   CARD FRONT
-============================================================ */
 .front-face {
   background: var(--espresso);
   height: 100%; width: 100%;
@@ -181,9 +169,7 @@ body::before {
 }
 
 .identity-block { display: flex; flex-direction: column; gap: 5px; }
-
 .logo-area { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
-
 .icon-svg svg { width: 26px; height: 26px; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2)); }
 
 .lab-badge {
@@ -232,15 +218,8 @@ body::before {
 }
 
 .contact-section { display: flex; flex-direction: column; gap: 5px; margin-bottom: 2px; }
-
 .contact-row { display: flex; align-items: center; gap: 9px; }
-
-.accent-dot {
-  width: 3.5px; height: 3.5px;
-  border-radius: 50%;
-  background: var(--honey-gold);
-  opacity: 0.9;
-}
+.accent-dot { width: 3.5px; height: 3.5px; border-radius: 50%; background: var(--honey-gold); opacity: 0.9; }
 
 .contact-detail {
   font-family: 'Josefin Sans', sans-serif;
@@ -249,9 +228,6 @@ body::before {
   color: rgba(255,250,240,0.85);
 }
 
-/* ============================================================
-   CARD BACK
-============================================================ */
 .back-face {
   background: var(--cream-bg);
   height: 100%; width: 100%;
@@ -351,9 +327,6 @@ body::before {
   color: rgba(62,42,36,0.85);
 }
 
-/* ============================================================
-   NAVIGATION
-============================================================ */
 nav {
   position: sticky; top: 0; z-index: 100;
   background: rgba(254,250,243,0.93);
@@ -394,18 +367,8 @@ nav {
 }
 .nav-cta:hover { background: var(--cognac); }
 
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 20px;
-  color: var(--espresso);
-  cursor: pointer;
-}
+.nav-toggle { display: none; background: none; border: none; font-size: 20px; color: var(--espresso); cursor: pointer; }
 
-/* ============================================================
-   HERO
-============================================================ */
 .hero {
   min-height: 82vh;
   display: grid; grid-template-columns: 1fr 1fr;
@@ -450,7 +413,13 @@ nav {
 .hero-sub {
   font-family: var(--mono);
   font-size: 13px; line-height: 1.8;
-  color: var(--stone); max-width: 440px; margin-bottom: 36px;
+  color: var(--stone); max-width: 460px; margin-bottom: 20px;
+}
+
+.hero-tags {
+  font-family: var(--sans); font-size: 9.5px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase; color: var(--cognac);
+  margin-bottom: 32px;
 }
 
 .hero-cta-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
@@ -487,9 +456,7 @@ nav {
 .btn-ghost::after { content: '→'; transition: transform 0.2s; display: inline-block; }
 .btn-ghost:hover::after { transform: translateX(4px); }
 
-/* Hero A2P diagram */
 .hero-visual { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; }
-
 .a2p-diagram { width: 280px; height: 280px; position: relative; }
 
 .a2p-ring {
@@ -507,10 +474,7 @@ nav {
 
 @keyframes rotateSlow { to { transform: rotate(360deg); } }
 
-.a2p-center {
-  position: absolute; top: 50%; left: 50%;
-  transform: translate(-50%, -50%); text-align: center;
-}
+.a2p-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
 
 .a2p-big {
   font-family: var(--serif);
@@ -537,13 +501,8 @@ nav {
 .n-bottom { bottom: -20px; left: 50%; transform: translateX(-50%); }
 .n-left   { left: -40px; top: 50%; transform: translateY(-50%); }
 
-/* ============================================================
-   TICKER
-============================================================ */
 .ticker { background: var(--espresso); padding: 14px 0; overflow: hidden; white-space: nowrap; }
-
 .ticker-track { display: inline-flex; animation: tickerRoll 30s linear infinite; }
-
 @keyframes tickerRoll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 .ticker-item {
@@ -555,9 +514,6 @@ nav {
 .ticker-item.hi { color: var(--honey-gold); }
 .ticker-sep { color: rgba(184,124,79,0.35); padding: 0 4px; }
 
-/* ============================================================
-   SHARED SECTION HELPERS
-============================================================ */
 .section-tag {
   font-family: var(--sans); font-size: 9px; font-weight: 500;
   letter-spacing: 3px; text-transform: uppercase;
@@ -575,17 +531,9 @@ nav {
   color: var(--stone); max-width: 560px; margin-top: 16px;
 }
 
-/* ============================================================
-   THE VISION — THREE VISION CARDS
-============================================================ */
 .vision { padding: 96px 80px; }
-
 .vision-head { max-width: 1200px; margin: 0 auto 56px; }
-
-.vision-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 2px; max-width: 1200px; margin: 0 auto;
-}
+.vision-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 1200px; margin: 0 auto; }
 
 .vision-card {
   padding: 36px 26px;
@@ -596,7 +544,6 @@ nav {
   background: var(--cream-bg);
 }
 .vision-card:hover { border-color: rgba(184,124,79,0.4); background: rgba(184,124,79,0.04); transform: translateY(-3px); }
-
 .vision-card.is-active { border-color: rgba(184,124,79,0.25); }
 
 .vision-status {
@@ -605,9 +552,7 @@ nav {
   color: var(--sage);
   display: inline-flex; align-items: center; gap: 6px;
 }
-.vision-status::before {
-  content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sage);
-}
+.vision-status::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sage); }
 .vision-status.is-soon { color: var(--bark); }
 .vision-status.is-soon::before { background: var(--bark); }
 
@@ -616,15 +561,8 @@ nav {
   letter-spacing: 2px; text-transform: uppercase; color: rgba(184,124,79,0.5);
 }
 
-.vision-name {
-  font-family: var(--serif); font-size: 19px; font-weight: 400;
-  color: var(--espresso); line-height: 1.25;
-}
-
-.vision-desc {
-  font-family: var(--mono); font-size: 11.5px; line-height: 1.75; color: var(--stone);
-  flex-grow: 1;
-}
+.vision-name { font-family: var(--serif); font-size: 19px; font-weight: 400; color: var(--espresso); line-height: 1.25; }
+.vision-desc { font-family: var(--mono); font-size: 11.5px; line-height: 1.75; color: var(--stone); flex-grow: 1; }
 
 .vision-cta {
   font-family: var(--sans); font-size: 8.5px; font-weight: 600;
@@ -636,15 +574,8 @@ nav {
 .vision-cta.is-live:hover { color: var(--cognac); }
 .vision-cta.is-soon { color: rgba(125,107,92,0.55); cursor: default; align-self: flex-start; }
 
-/* ============================================================
-   FOR ENGINEERS
-============================================================ */
 .community { padding: 96px 80px; background: var(--cream-dark); }
-
-.community-wrap {
-  display: grid; grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px; align-items: start; max-width: 1200px; margin: 0 auto;
-}
+.community-wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: start; max-width: 1200px; margin: 0 auto; }
 
 .community-headline {
   font-family: var(--serif);
@@ -653,10 +584,14 @@ nav {
 }
 .community-headline em { font-style: italic; color: var(--cognac); }
 
-.community-body {
-  font-family: var(--mono); font-size: 13px; line-height: 1.85;
-  color: var(--stone); margin-bottom: 28px;
+.community-body { font-family: var(--mono); font-size: 13px; line-height: 1.85; color: var(--stone); margin-bottom: 28px; }
+
+.entry-eyebrow {
+  font-family: var(--sans); font-size: 9px; font-weight: 500;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--cognac); margin-bottom: 18px;
+  display: flex; align-items: center; gap: 10px;
 }
+.entry-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--cognac); }
 
 .stack-label {
   font-family: var(--sans); font-size: 8px; font-weight: 500;
@@ -674,11 +609,7 @@ nav {
   padding: 8px 16px; border-radius: 30px;
 }
 
-.community-panel {
-  border: 1px solid rgba(184,124,79,0.2);
-  background: var(--cream-bg);
-  padding: 40px 32px;
-}
+.community-panel { border: 1px solid rgba(184,124,79,0.2); background: var(--cream-bg); padding: 40px 32px; }
 
 .panel-eyebrow {
   font-family: var(--sans); font-size: 8px; font-weight: 500;
@@ -691,22 +622,11 @@ nav {
   font-family: var(--mono); font-size: 12.5px; line-height: 1.7; color: var(--bark);
   padding-left: 18px; position: relative;
 }
-.panel-list li::before {
-  content: '—'; position: absolute; left: 0; color: var(--cognac);
-}
+.panel-list li::before { content: '—'; position: absolute; left: 0; color: var(--cognac); }
 
-/* ============================================================
-   FOR ORGANISATIONS
-============================================================ */
 .org { padding: 96px 80px; }
-
 .org.org-institutions { background: var(--cream-dark); }
-
-.org-wrap {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 80px; align-items: start;
-  max-width: 1200px; margin: 0 auto;
-}
+.org-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; max-width: 1200px; margin: 0 auto; }
 
 .org-headline {
   font-family: var(--serif);
@@ -715,10 +635,7 @@ nav {
 }
 .org-headline em { font-style: italic; color: var(--cognac); }
 
-.org-body {
-  font-family: var(--mono); font-size: 13px; line-height: 1.85;
-  color: var(--stone); margin-bottom: 18px;
-}
+.org-body { font-family: var(--mono); font-size: 13px; line-height: 1.85; color: var(--stone); margin-bottom: 18px; }
 
 .org-pivot {
   border-left: 2px solid var(--cognac);
@@ -727,14 +644,10 @@ nav {
   border-radius: 0 4px 4px 0;
   margin-top: 24px; margin-bottom: 28px;
 }
-.org-pivot p {
-  font-family: var(--mono); font-size: 13px;
-  line-height: 1.8; color: var(--bark);
-}
+.org-pivot p { font-family: var(--mono); font-size: 13px; line-height: 1.8; color: var(--bark); }
 .org-pivot strong { color: var(--espresso); font-weight: 500; }
 
 .org-traits { display: flex; flex-direction: column; gap: 22px; }
-
 .org-trait { display: flex; gap: 16px; align-items: flex-start; }
 
 .trait-mark {
@@ -744,20 +657,10 @@ nav {
   display: flex; align-items: center; justify-content: center;
 }
 
-.trait-text-name {
-  font-family: var(--serif); font-size: 15px; font-weight: 400; color: var(--espresso);
-  margin-bottom: 4px;
-}
+.trait-text-name { font-family: var(--serif); font-size: 15px; font-weight: 400; color: var(--espresso); margin-bottom: 4px; }
+.trait-text-desc { font-family: var(--mono); font-size: 12px; line-height: 1.7; color: var(--stone); }
 
-.trait-text-desc {
-  font-family: var(--mono); font-size: 12px; line-height: 1.7; color: var(--stone);
-}
-
-/* ============================================================
-   FRAMEWORK LICENCE
-============================================================ */
 .licence { padding: 90px 80px; }
-
 .licence-box {
   max-width: 900px; margin: 0 auto;
   border: 1px solid rgba(184,124,79,0.25);
@@ -769,65 +672,17 @@ nav {
   content: ''; position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
   width: 60px; height: 2px; background: linear-gradient(90deg, var(--cognac), var(--honey-gold));
 }
-
-.licence-tag {
-  font-family: var(--sans); font-size: 9px; font-weight: 500;
-  letter-spacing: 3px; text-transform: uppercase; color: var(--cognac); margin-bottom: 18px;
-}
-
+.licence-tag { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--cognac); margin-bottom: 18px; }
 .licence-headline {
   font-family: var(--serif); font-size: clamp(22px, 2.6vw, 30px); font-weight: 300;
   line-height: 1.4; color: var(--espresso); letter-spacing: -0.3px; margin-bottom: 24px;
 }
 .licence-headline em { font-style: italic; color: var(--cognac); }
 
-/* ============================================================
-   CORE DOCTRINE
-============================================================ */
-.doctrine { background: var(--espresso); padding: 96px 80px; }
-.doctrine .section-tag { color: var(--honey-gold); }
-.doctrine .section-title { color: var(--cream-bg); }
-
-.doctrine-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 2px; max-width: 1200px; margin: 0 auto;
-}
-
-.doctrine-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(220,170,107,0.1);
-  padding: 36px 28px;
-  transition: background 0.3s, border-color 0.3s;
-}
-.doctrine-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(220,170,107,0.25); }
-
-.dc-num {
-  font-family: var(--serif); font-size: 11px; font-weight: 300;
-  color: rgba(220,170,107,0.35); margin-bottom: 18px; letter-spacing: 1px;
-}
-
-.dc-title {
-  font-family: var(--serif); font-size: 17px; font-weight: 400;
-  color: var(--cream-bg); line-height: 1.3; margin-bottom: 12px;
-}
-.dc-title em { font-style: italic; color: var(--honey-gold); }
-
-.dc-body {
-  font-family: var(--mono); font-size: 12px; line-height: 1.8;
-  color: rgba(245,240,232,0.78);
-}
-
-/* ============================================================
-   A2P FRAMEWORK
-============================================================ */
 .a2p-section { background: #1C1C1A; padding: 96px 80px; overflow: hidden; }
 .a2p-section .section-tag { color: var(--honey-gold); }
 .a2p-section .section-title { color: var(--cream-bg); }
-
-.a2p-flow {
-  display: grid; grid-template-columns: repeat(6, 1fr);
-  gap: 1px; max-width: 1200px; margin: 56px auto 0;
-}
+.a2p-flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; max-width: 1200px; margin: 56px auto 0; }
 
 .a2p-step {
   padding: 28px 20px;
@@ -838,31 +693,13 @@ nav {
 }
 .a2p-step:hover { background: rgba(220,170,107,0.06); }
 
-.step-num-lg {
-  font-family: var(--serif); font-size: 26px; font-weight: 300;
-  color: rgba(220,170,107,0.18); line-height: 1;
-}
+.step-num-lg { font-family: var(--serif); font-size: 26px; font-weight: 300; color: rgba(220,170,107,0.18); line-height: 1; }
+.step-name-lg { font-family: var(--serif); font-size: 14px; font-weight: 400; color: var(--cream-bg); line-height: 1.3; }
+.step-desc { font-family: var(--mono); font-size: 11px; line-height: 1.7; color: rgba(245,240,232,0.75); }
 
-.step-name-lg {
-  font-family: var(--serif); font-size: 14px; font-weight: 400;
-  color: var(--cream-bg); line-height: 1.3;
-}
-
-.step-desc {
-  font-family: var(--mono); font-size: 11px; line-height: 1.7;
-  color: rgba(245,240,232,0.75);
-}
-
-/* ============================================================
-   WHERE AI FITS
-============================================================ */
 .ai-fits { padding: 96px 80px; }
 .ai-fits .section-title { color: var(--espresso); }
-
-.ai-grid {
-  display: grid; grid-template-columns: repeat(6, 1fr);
-  gap: 2px; max-width: 1200px; margin: 56px auto 0;
-}
+.ai-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px; max-width: 1200px; margin: 56px auto 0; }
 
 .ai-card {
   padding: 48px 36px;
@@ -878,31 +715,13 @@ nav {
   display: flex; align-items: center; justify-content: center;
   font-family: var(--serif); font-size: 14px; font-weight: 300; color: var(--cognac);
 }
+.ai-label { font-family: var(--sans); font-size: 8px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: var(--cognac); }
+.ai-name { font-family: var(--serif); font-size: 16px; font-weight: 400; color: var(--espresso); line-height: 1.25; }
+.ai-desc { font-family: var(--mono); font-size: 12px; line-height: 1.8; color: var(--stone); }
 
-.ai-label {
-  font-family: var(--sans); font-size: 8px; font-weight: 500;
-  letter-spacing: 2.5px; text-transform: uppercase; color: var(--cognac);
-}
-
-.ai-name {
-  font-family: var(--serif); font-size: 16px; font-weight: 400;
-  color: var(--espresso); line-height: 1.25;
-}
-
-.ai-desc {
-  font-family: var(--mono); font-size: 12px; line-height: 1.8; color: var(--stone);
-}
-
-/* ============================================================
-   THREE ENTRY POINTS
-============================================================ */
 .entry-points { padding: 96px 80px; }
 .entry-points .section-title { color: var(--espresso); }
-
-.ep-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 2px; max-width: 1200px; margin: 56px auto 0;
-}
+.ep-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 1200px; margin: 56px auto 0; }
 
 .ep-card {
   padding: 48px 36px;
@@ -918,55 +737,22 @@ nav {
   display: flex; align-items: center; justify-content: center;
   font-family: var(--serif); font-size: 14px; font-weight: 300; color: var(--cognac);
 }
+.ep-label { font-family: var(--sans); font-size: 8px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: var(--cognac); }
+.ep-name { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--espresso); line-height: 1.25; }
+.ep-desc { font-family: var(--mono); font-size: 12px; line-height: 1.8; color: var(--stone); }
 
-.ep-label {
-  font-family: var(--sans); font-size: 8px; font-weight: 500;
-  letter-spacing: 2.5px; text-transform: uppercase; color: var(--cognac);
-}
-
-.ep-name {
-  font-family: var(--serif); font-size: 20px; font-weight: 400;
-  color: var(--espresso); line-height: 1.25;
-}
-
-.ep-desc {
-  font-family: var(--mono); font-size: 12px; line-height: 1.8; color: var(--stone);
-}
-
-/* ============================================================
-   BRAND STRIP
-============================================================ */
-.brand-strip {
-  background: var(--sage); padding: 60px 80px;
-  display: flex; align-items: center; justify-content: center;
-  gap: 80px; flex-wrap: wrap;
-}
-
+.brand-strip { background: var(--sage); padding: 60px 80px; display: flex; align-items: center; justify-content: center; gap: 80px; flex-wrap: wrap; }
 .brand-id { display: flex; flex-direction: column; gap: 4px; align-items: center; }
-
-.brand-id-name {
-  font-family: var(--serif); font-size: 18px; font-weight: 400;
-  color: var(--cream-bg); letter-spacing: -0.2px;
-}
-
-.brand-id-role {
-  font-family: var(--sans); font-size: 7.5px; letter-spacing: 2.5px;
-  text-transform: uppercase; color: rgba(245,240,232,0.45);
-}
-
+.brand-id-name { font-family: var(--serif); font-size: 18px; font-weight: 400; color: var(--cream-bg); letter-spacing: -0.2px; }
+.brand-id-role { font-family: var(--sans); font-size: 7.5px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(245,240,232,0.45); }
 .brand-sep { width: 1px; height: 48px; background: rgba(245,240,232,0.15); }
 
-/* ============================================================
-   MANIFESTO
-============================================================ */
 .manifesto { padding: 120px 80px; max-width: 900px; margin: 0 auto; text-align: center; }
-
 .manifesto-quote {
   font-family: var(--serif);
   font-size: clamp(20px, 2.8vw, 32px); font-weight: 300; font-style: italic;
   line-height: 1.55; color: var(--espresso); letter-spacing: -0.3px; margin-bottom: 28px;
 }
-
 .manifesto-attr {
   font-family: var(--sans); font-size: 9px; letter-spacing: 2.5px;
   text-transform: uppercase; color: var(--stone);
@@ -975,33 +761,44 @@ nav {
 .manifesto-attr::before,
 .manifesto-attr::after { content: ''; display: block; width: 40px; height: 1px; background: rgba(184,124,79,0.3); }
 
-
-/* ============================================================
-   ABOUT
-============================================================ */
-.about-wrap { padding: 96px 80px; }
-
-.about {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 80px; max-width: 1200px; margin: 0 auto; align-items: center;
+/* Philosophy statement */
+.philosophy { padding: 100px 80px; background: var(--espresso); text-align: center; }
+.philosophy .section-tag { color: var(--honey-gold); justify-content: center; display: flex; }
+.philosophy-statement {
+  font-family: var(--serif); font-size: clamp(24px, 3.2vw, 40px); font-weight: 300;
+  line-height: 1.5; color: var(--cream-bg); letter-spacing: -0.4px;
+  max-width: 820px; margin: 24px auto 0;
 }
+.philosophy-statement em { font-style: italic; color: var(--honey-gold); }
 
+/* How Engineers Really Learn comparison */
+.compare-learn { padding: 96px 80px; }
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; max-width: 1100px; margin: 56px auto 0; }
+.compare-col { padding: 40px 36px; border: 1px solid rgba(184,124,79,0.15); }
+.compare-col.is-iol { background: rgba(184,124,79,0.05); border-color: rgba(184,124,79,0.35); }
+.compare-label {
+  font-family: var(--sans); font-size: 9px; font-weight: 600;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--stone); margin-bottom: 24px;
+}
+.compare-col.is-iol .compare-label { color: var(--cognac); }
+.compare-chain { display: flex; flex-direction: column; gap: 0; }
+.compare-node {
+  font-family: var(--serif); font-size: 15px; color: var(--espresso);
+  padding: 12px 0; border-bottom: 1px dashed rgba(184,124,79,0.2);
+}
+.compare-node:last-child { border-bottom: none; }
+.compare-arrow { text-align: center; color: var(--cognac); font-size: 12px; padding: 2px 0; }
+
+.about-wrap { padding: 96px 80px; }
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; max-width: 1200px; margin: 0 auto; align-items: center; }
 .about-portrait {
   aspect-ratio: 3/4; background: var(--cream-dark);
   border: 1px solid rgba(184,124,79,0.15);
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
 }
-.about-portrait::after {
-  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
-  background: linear-gradient(90deg, var(--cognac), var(--honey-gold));
-}
-
-.portrait-ph {
-  font-family: var(--serif); font-size: 64px; font-weight: 300;
-  color: rgba(184,124,79,0.2);
-}
-
+.about-portrait::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--cognac), var(--honey-gold)); }
+.portrait-ph { font-family: var(--serif); font-size: 64px; font-weight: 300; color: rgba(184,124,79,0.2); }
 .about-eyebrow {
   font-family: var(--sans); font-size: 9px; font-weight: 500;
   letter-spacing: 3px; text-transform: uppercase;
@@ -1009,76 +806,22 @@ nav {
   display: flex; align-items: center; gap: 10px;
 }
 .about-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--cognac); }
-
-.about-name {
-  font-family: var(--serif); font-size: clamp(26px, 3vw, 38px);
-  font-weight: 300; color: var(--espresso);
-  letter-spacing: -0.5px; line-height: 1.15; margin-bottom: 6px;
-}
-
-.about-cred {
-  font-family: var(--mono); font-size: 12px;
-  color: var(--stone); margin-bottom: 24px; font-style: italic;
-}
-
-.about-body {
-  font-family: var(--mono); font-size: 13px; line-height: 1.85;
-  color: var(--stone); margin-bottom: 20px;
-}
-
+.about-name { font-family: var(--serif); font-size: clamp(26px, 3vw, 38px); font-weight: 300; color: var(--espresso); letter-spacing: -0.5px; line-height: 1.15; margin-bottom: 6px; }
+.about-cred { font-family: var(--mono); font-size: 12px; color: var(--stone); margin-bottom: 24px; font-style: italic; }
+.about-body { font-family: var(--mono); font-size: 13px; line-height: 1.85; color: var(--stone); margin-bottom: 20px; }
 .stats-row { display: flex; gap: 36px; flex-wrap: wrap; margin-top: 12px; }
-
 .stat { display: flex; flex-direction: column; gap: 3px; }
+.stat-num { font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--espresso); letter-spacing: -1px; }
+.stat-label { font-family: var(--sans); font-size: 8px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--stone); }
 
-.stat-num {
-  font-family: var(--serif); font-size: 32px; font-weight: 300;
-  color: var(--espresso); letter-spacing: -1px;
-}
-
-.stat-label {
-  font-family: var(--sans); font-size: 8px; font-weight: 500;
-  letter-spacing: 2px; text-transform: uppercase; color: var(--stone);
-}
-
-/* ============================================================
-   CONTACT CTA
-============================================================ */
-.contact-cta {
-  background: var(--espresso); padding: 120px 80px;
-  text-align: center; position: relative; overflow: hidden;
-}
-.contact-cta::before {
-  content: ''; position: absolute; top: -200px; left: 50%;
-  transform: translateX(-50%); width: 600px; height: 600px;
-  border-radius: 50%; border: 1px solid rgba(220,170,107,0.06);
-}
-.contact-cta::after {
-  content: ''; position: absolute; top: -140px; left: 50%;
-  transform: translateX(-50%); width: 400px; height: 400px;
-  border-radius: 50%; border: 1px solid rgba(220,170,107,0.1);
-}
-
+.contact-cta { background: var(--espresso); padding: 120px 80px; text-align: center; position: relative; overflow: hidden; }
+.contact-cta::before { content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; border-radius: 50%; border: 1px solid rgba(220,170,107,0.06); }
+.contact-cta::after { content: ''; position: absolute; top: -140px; left: 50%; transform: translateX(-50%); width: 400px; height: 400px; border-radius: 50%; border: 1px solid rgba(220,170,107,0.1); }
 .cta-inner { position: relative; z-index: 2; }
-
-.cta-label {
-  font-family: var(--sans); font-size: 9px; font-weight: 500;
-  letter-spacing: 3px; text-transform: uppercase;
-  color: var(--honey-gold); margin-bottom: 18px;
-}
-
-.cta-headline {
-  font-family: var(--serif); font-size: clamp(26px, 4vw, 50px);
-  font-weight: 300; line-height: 1.2;
-  color: var(--cream-bg); letter-spacing: -1px; margin-bottom: 20px;
-}
+.cta-label { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--honey-gold); margin-bottom: 18px; }
+.cta-headline { font-family: var(--serif); font-size: clamp(26px, 4vw, 50px); font-weight: 300; line-height: 1.2; color: var(--cream-bg); letter-spacing: -1px; margin-bottom: 20px; }
 .cta-headline em { font-style: italic; color: var(--honey-gold); }
-
-.cta-sub {
-  font-family: var(--mono); font-size: 13px; line-height: 1.8;
-  color: rgba(245,240,232,0.72);
-  max-width: 480px; margin: 0 auto 40px;
-}
-
+.cta-sub { font-family: var(--mono); font-size: 13px; line-height: 1.8; color: rgba(245,240,232,0.72); max-width: 480px; margin: 0 auto 40px; }
 .cta-contact {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--serif); font-size: 20px; font-weight: 300;
@@ -1088,41 +831,16 @@ nav {
 }
 .cta-contact:hover { border-color: var(--honey-gold); }
 
-/* ============================================================
-   FOOTER
-============================================================ */
-footer {
-  background: #1A1410; padding: 40px 80px;
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 16px;
-}
+footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.footer-left { font-family: var(--mono); font-size: 11px; line-height: 1.7; color: rgba(245,240,232,0.55); }
+.footer-right { font-family: var(--sans); font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(245,240,232,0.45); }
 
-.footer-left {
-  font-family: var(--mono); font-size: 11px; line-height: 1.7;
-  color: rgba(245,240,232,0.55);
-}
-
-.footer-right {
-  font-family: var(--sans); font-size: 8px; letter-spacing: 2px;
-  text-transform: uppercase; color: rgba(245,240,232,0.45);
-}
-
-/* ============================================================
-   RESPONSIVE
-============================================================ */
 @media (max-width: 900px) {
   nav { padding: 0 24px; }
-  .nav-links { 
-    display: none;
-    position: absolute;
-    top: 56px;
-    left: 0;
-    right: 0;
-    background: rgba(254,250,243,0.98);
-    flex-direction: column;
-    padding: 24px;
-    border-bottom: 1px solid rgba(184,124,79,0.15);
-    gap: 16px;
+  .nav-links {
+    display: none; position: absolute; top: 56px; left: 0; right: 0;
+    background: rgba(254,250,243,0.98); flex-direction: column; padding: 24px;
+    border-bottom: 1px solid rgba(184,124,79,0.15); gap: 16px;
   }
   .nav-links.show { display: flex; }
   .nav-toggle { display: block; }
@@ -1137,8 +855,6 @@ footer {
   .org-wrap { grid-template-columns: 1fr; gap: 40px; }
   .licence { padding: 60px 24px; }
   .licence-box { padding: 40px 28px; }
-  .doctrine { padding: 60px 24px; }
-  .doctrine-grid { grid-template-columns: 1fr 1fr; }
   .a2p-section { padding: 60px 24px; }
   .a2p-flow { grid-template-columns: 1fr 1fr; }
   .ai-fits { padding: 60px 24px; }
@@ -1147,7 +863,9 @@ footer {
   .ep-grid { grid-template-columns: 1fr; }
   .brand-strip { padding: 48px 24px; gap: 40px; }
   .brand-sep { display: none; }
-  .manifesto { padding: 80px 24px; }
+  .philosophy { padding: 60px 24px; }
+  .compare-learn { padding: 60px 24px; }
+  .compare-grid { grid-template-columns: 1fr; }
   .about-wrap { padding: 60px 24px; }
   .about { grid-template-columns: 1fr; }
   .about-portrait { display: none; }
@@ -1158,16 +876,9 @@ footer {
 @media (max-width: 640px) {
   .vision-grid { grid-template-columns: 1fr; }
   .ai-grid { grid-template-columns: 1fr !important; }
-  .card {
-    width: 85vw;
-    height: auto;
-    aspect-ratio: 90 / 55;
-  }
+  .card { width: 85vw; height: auto; aspect-ratio: 90 / 55; }
 }
 
-/* ============================================================
-   ACCESSIBILITY: REDUCED MOTION
-============================================================ */
 @media (prefers-reduced-motion: reduce) {
   .ticker-track { animation: none; }
   .a2p-ring { animation: none; }
@@ -1183,8 +894,6 @@ footer {
 <section class="card-showcase">
   <div class="showcase-eyebrow">Executive Business Card — Scroll down for full details</div>
   <div class="cards-row">
-
-    <!-- Front -->
     <div class="card-module">
       <div class="face-label">FRONT</div>
       <div class="card">
@@ -1214,32 +923,19 @@ footer {
               <div class="tagline-updated">Industry Oriented Learning (IOL)</div>
             </div>
             <div class="contact-section">
-              <div class="contact-row">
-                <span class="accent-dot"></span>
-                <span class="contact-detail">+60 16 413 9982</span>
-              </div>
-              <div class="contact-row">
-                <span class="accent-dot"></span>
-                <span class="contact-detail">teohpingchow@outlook.com</span>
-              </div>
-              <div class="contact-row">
-                <span class="accent-dot"></span>
-                <span class="contact-detail">linkedin.com/in/ping-chow-teoh</span>
-              </div>
+              <div class="contact-row"><span class="accent-dot"></span><span class="contact-detail">+60 16 413 9982</span></div>
+              <div class="contact-row"><span class="accent-dot"></span><span class="contact-detail">teohpingchow@outlook.com</span></div>
+              <div class="contact-row"><span class="accent-dot"></span><span class="contact-detail">linkedin.com/in/ping-chow-teoh</span></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Back -->
     <div class="card-module">
       <div class="face-label">BACK</div>
       <div class="card">
         <div class="back-face">
-          <div class="back-strip">
-            <span class="strip-label">Making Workplace Learning Visible</span>
-          </div>
+          <div class="back-strip"><span class="strip-label">Workplace as the Learning Origin</span></div>
           <div class="back-content-padded">
             <div class="brand-header">
               <div class="lab-name-primary">PCTeoh</div>
@@ -1247,27 +943,17 @@ footer {
             </div>
             <div class="divider-subtle"></div>
             <div class="methodology-grid">
-              <div class="method-step">
-                <div class="step-circle">A</div>
-                <div class="step-name">Action</div>
-              </div>
-              <div class="method-step">
-                <div class="step-circle accent-circle">2</div>
-                <div class="step-name">to</div>
-              </div>
-              <div class="method-step">
-                <div class="step-circle">P</div>
-                <div class="step-name">Performance</div>
-              </div>
+              <div class="method-step"><div class="step-circle">A</div><div class="step-name">Action</div></div>
+              <div class="method-step"><div class="step-circle accent-circle">2</div><div class="step-name">to</div></div>
+              <div class="method-step"><div class="step-circle">P</div><div class="step-name">Performance</div></div>
             </div>
             <div class="footer-brand">
-              <span class="license-badge">Visible learning drives deliberate development</span>
+              <span class="license-badge">When work becomes visible, talent develops deliberately</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -1277,12 +963,11 @@ footer {
 <nav>
   <a href="#" class="nav-logo">PC<span>Teoh</span> Learning Lab</a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#loop">The Loop</a></li>
-    <li><a href="#vision">Vision</a></li>
-    <li><a href="#community">Community</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#individuals">Individuals</a></li>
     <li><a href="#organisations">Organisations</a></li>
     <li><a href="#institutions">Institutions</a></li>
-    <li><a href="#framework">Methodology</a></li>
+    <li><a href="#philosophy">Philosophy</a></li>
     <li><a href="#about">About</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Start a Conversation</a>
@@ -1292,20 +977,22 @@ footer {
 <main>
 
 <!-- ============================================================
-     03. HERO
+     03. HERO — CHANGE 1: clarity within 5 seconds
 ============================================================ -->
 <section class="hero">
   <div class="hero-text">
     <div class="hero-eyebrow">PCTeoh Learning Lab</div>
     <h1 class="hero-headline">
-      When work becomes visible,<br>
-      <em>the mind starts to work on it.</em>
+      Workplace as the<br>
+      <em>Learning Origin.</em>
     </h1>
     <p class="hero-sub">
-      Finishing a task doesn't automatically teach you anything. What matters is making the work visible — so you can see what happened, ask why, connect the dots, and think back on the result. Do that often enough, and everyday work turns into real skill and better performance over time.
+      Helping engineers and organisations grow through real work. PCTeoh Learning Lab helps companies transform authentic workplace experiences into measurable engineering capability.
     </p>
+    <div class="hero-tags">Engineering Improvement &middot; Workplace Learning &middot; Industry–Academia Integration</div>
     <div class="hero-cta-row">
-      <a href="#community" class="btn-secondary">For Individuals — Join Community</a>
+      <a href="#how-it-works" class="btn-primary">How It Works</a>
+      <a href="#individuals" class="btn-secondary">For Individuals</a>
       <a href="#organisations" class="btn-secondary">For Organisations</a>
       <a href="#institutions" class="btn-secondary">For Institutions</a>
     </div>
@@ -1335,126 +1022,66 @@ footer {
     <span class="ticker-item">Industry Oriented Learning</span><span class="ticker-sep"></span>
     <span class="ticker-item hi">A2P</span><span class="ticker-sep"></span>
     <span class="ticker-item">Action to Performance</span><span class="ticker-sep"></span>
-    <span class="ticker-item hi">The Objective Is To Trigger Learning</span><span class="ticker-sep"></span>
-    <span class="ticker-item">Grow at Work</span><span class="ticker-sep"></span>
-    <span class="ticker-item hi">AI Is Not The Teacher</span><span class="ticker-sep"></span>
-    <span class="ticker-item">Thinking Happens Inside The Engineer</span><span class="ticker-sep"></span>
+    <span class="ticker-item hi">Knowledge does not create engineers. Thinking does.</span><span class="ticker-sep"></span>
     <span class="ticker-item hi">IOL</span><span class="ticker-sep"></span>
     <span class="ticker-item">Industry Oriented Learning</span><span class="ticker-sep"></span>
     <span class="ticker-item hi">A2P</span><span class="ticker-sep"></span>
     <span class="ticker-item">Action to Performance</span><span class="ticker-sep"></span>
-    <span class="ticker-item hi">The Objective Is To Trigger Learning</span><span class="ticker-sep"></span>
-    <span class="ticker-item">Grow at Work</span><span class="ticker-sep"></span>
-    <span class="ticker-item hi">AI Is Not The Teacher</span><span class="ticker-sep"></span>
-    <span class="ticker-item">Thinking Happens Inside The Engineer</span><span class="ticker-sep"></span>
+    <span class="ticker-item hi">Knowledge does not create engineers. Thinking does.</span><span class="ticker-sep"></span>
   </div>
 </div>
 
 <!-- ============================================================
-     04B. THE LEARNING LOOP
+     04B. CHANGE 2 + 4: HOW ENGINEERS REALLY LEARN
+     Real Work -> Reflection -> Learning -> Capability, AI beside Reflection
 ============================================================ -->
-<section class="a2p-section" id="loop">
+<section class="a2p-section" id="how-it-works">
   <div style="text-align:center; max-width:1200px; margin:0 auto 56px;">
-    <div class="section-tag">Why Visibility Matters</div>
-    <h2 class="section-title">Visible work gives the mind something to work with.</h2>
-    <p class="section-intro" style="margin-left:auto; margin-right:auto;">Writing something down doesn't teach you anything by itself. But once a piece of work is out in the open, something else can happen — here's the sequence.</p>
+    <div class="section-tag">How Engineers Really Learn</div>
+    <h2 class="section-title">Knowledge does not create engineers. Thinking creates engineers.</h2>
+    <p class="section-intro" style="margin-left:auto; margin-right:auto;">The traditional belief is lecture, then knowledge, then examination. IOL works differently — it starts with real work, not a classroom.</p>
   </div>
-  <div class="a2p-flow" style="grid-template-columns:repeat(7,1fr); max-width:1300px;">
-    <div class="a2p-step"><div class="step-num-lg">01</div><div class="step-name-lg">Work Event</div><div class="step-desc">Something happens in real work.</div></div>
-    <div class="a2p-step"><div class="step-num-lg">02</div><div class="step-name-lg">Made Visible</div><div class="step-desc">It's noticed, not buried.</div></div>
-    <div class="a2p-step"><div class="step-num-lg">03</div><div class="step-name-lg">Capsule / AI / Mentor</div><div class="step-desc">A concept or question is offered nearby — never the answer.</div></div>
-    <div class="a2p-step" style="background:rgba(220,170,107,0.1); border-color:rgba(220,170,107,0.4);"><div class="step-num-lg" style="color:var(--honey-gold);">04</div><div class="step-name-lg" style="color:var(--honey-gold);">Thinking</div><div class="step-desc" style="color:rgba(245,240,232,0.7);">What visibility was for. Everything else exists to make room for it.</div></div>
-    <div class="a2p-step"><div class="step-num-lg">05</div><div class="step-name-lg">Experimentation</div><div class="step-desc">The idea gets tested against the real problem.</div></div>
-    <div class="a2p-step"><div class="step-num-lg">06</div><div class="step-name-lg">New Understanding</div><div class="step-desc">Something is known now that wasn't before.</div></div>
-    <div class="a2p-step"><div class="step-num-lg">07</div><div class="step-name-lg">Improved Future Work</div><div class="step-desc">Which is, in the end, better action and better performance.</div></div>
+  <div class="a2p-flow" style="grid-template-columns:repeat(4,1fr); max-width:900px;">
+    <div class="a2p-step"><div class="step-num-lg">01</div><div class="step-name-lg">Real Work</div><div class="step-desc">A genuine event happens on the job — a task, a fault, a decision.</div></div>
+    <div class="a2p-step" style="background:rgba(220,170,107,0.1); border-color:rgba(220,170,107,0.4);"><div class="step-num-lg" style="color:var(--honey-gold);">02</div><div class="step-name-lg" style="color:var(--honey-gold);">Reflection <span style="font-size:10px; opacity:0.7;">(AI sits here, beside you)</span></div><div class="step-desc" style="color:rgba(245,240,232,0.7);">The engineer looks back and asks why. AI can offer a question or a related experience — never the answer.</div></div>
+    <div class="a2p-step"><div class="step-num-lg">03</div><div class="step-name-lg">Learning</div><div class="step-desc">A new understanding forms — inside the engineer, not inside a slide.</div></div>
+    <div class="a2p-step"><div class="step-num-lg">04</div><div class="step-name-lg">Capability</div><div class="step-desc">The understanding shows up as better judgement in the next piece of real work.</div></div>
   </div>
 </section>
 
 <!-- ============================================================
-     04C. AI IS NOT THE TEACHER
+     04C. CHANGE 11: WHERE AI FITS (honest framing)
 ============================================================ -->
 <section class="ai-fits" id="ai-role">
-  <div style="max-width:1200px; margin:0 auto 56px;">
-    <div class="section-tag">Where AI Fits</div>
-    <h2 class="section-title">AI doesn't give you the answer. It nudges your thinking along.</h2>
-    <p class="section-intro">It stays at the edge, not the centre — offering just enough to help you keep working through your own problem.</p>
-  </div>
-  <div class="ai-grid">
-    <div class="ai-card"><div class="ai-icon">R</div><div class="ai-label">01</div><div class="ai-name">Retrieve</div><div class="ai-desc">A relevant past experience, not a generic answer.</div></div>
-    <div class="ai-card"><div class="ai-icon">S</div><div class="ai-label">02</div><div class="ai-name">Suggest</div><div class="ai-desc">A concept worth weighing up.</div></div>
-    <div class="ai-card"><div class="ai-icon">Q</div><div class="ai-label">03</div><div class="ai-name">Question</div><div class="ai-desc">A good question, left open.</div></div>
-    <div class="ai-card"><div class="ai-icon">C</div><div class="ai-label">04</div><div class="ai-name">Recommend</div><div class="ai-desc">A capsule that happens to fit today's problem.</div></div>
-    <div class="ai-card"><div class="ai-icon">O</div><div class="ai-label">05</div><div class="ai-name">Organise</div><div class="ai-desc">Evidence, so a pattern of growth can be seen.</div></div>
-    <div class="ai-card"><div class="ai-icon">T</div><div class="ai-label">06</div><div class="ai-name">Support</div><div class="ai-desc">A moment of reflection — the "why" after the "what."</div></div>
-  </div>
-  <div style="max-width:900px; margin:40px auto 0; text-align:center; font-family:var(--serif); font-style:italic; font-size:19px; color:var(--espresso);">
-    The learning still happens inside you. AI doesn't do it for you — it just sparks it.
+  <div style="max-width:900px; margin:0 auto; text-align:center;">
+    <div class="section-tag" style="justify-content:center; display:flex;">Where AI Fits</div>
+    <h2 class="section-title">AI does not teach. It helps engineers think.</h2>
+    <p class="section-intro" style="margin-left:auto; margin-right:auto;">Beside the reflection, not above it: AI suggests a relevant experience, asks a good question, or recommends a resource. It never supplies the answer. The learning still happens inside the engineer.</p>
   </div>
 </section>
 
 <!-- ============================================================
-     05. THE VISION — THREE WAYS TO WORK TOGETHER
+     05. FOR INDIVIDUALS — BUILD YOUR EPORTFOLIO
 ============================================================ -->
-<section class="vision" id="vision">
-  <div class="vision-head">
-    <div class="section-tag">The Vision</div>
-    <h2 class="section-title">Three ways PCTeoh Learning Lab works with you</h2>
-    <p class="section-intro">Whatever group you belong to — community, company, or learning institution — the goal is the same: make work visible, wherever it happens.</p>
-  </div>
-  <div class="vision-grid">
-
-    <div class="vision-card is-active">
-      <span class="vision-status">Open now</span>
-      <span class="vision-year">Remote</span>
-      <div class="vision-name">Individuals</div>
-      <p class="vision-desc">For engineers and technicians. Build a portfolio out of your real work, compare notes with peers, and grow into the person who leads this in your own organisation.</p>
-      <a href="#community" class="vision-cta is-live">Join the community</a>
-    </div>
-
-    <div class="vision-card is-active">
-      <span class="vision-status">Open now</span>
-      <span class="vision-year">Remote</span>
-      <div class="vision-name">Companies</div>
-      <p class="vision-desc">For organisations that want everyday work to also become a place where people learn and grow.</p>
-      <a href="#organisations" class="vision-cta is-live">Enquire</a>
-    </div>
-
-    <div class="vision-card is-active">
-      <span class="vision-status">Open now</span>
-      <span class="vision-year">Remote</span>
-      <div class="vision-name">Institutions</div>
-      <p class="vision-desc">For schools and colleges that want to close the gap between what a graduate knows and what a working professional actually does.</p>
-      <a href="#institutions" class="vision-cta is-live">Find out more</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ============================================================
-     06. FOR INDIVIDUALS — COMMUNITY
-============================================================ -->
-<section class="community" id="community">
+<section class="community" id="individuals">
   <div class="community-wrap">
     <div>
       <div class="entry-eyebrow">For Individuals</div>
       <h2 class="community-headline">
         Build your ePortfolio.<br>
-        <em>Become the IOL lead</em> in your organisation.
+        <em>Become the learning lead</em> in your organisation.
       </h2>
       <p class="community-body">
-        Your daily work already proves what you can do. Not because it's written down, but because your thinking changed while you did it. The community gives you a way to show that, peers to test it with, and the recognition it deserves.
+        Your daily work already proves what you can do — not because it's written down, but because your thinking changed while you did it. Join the community to turn that into a portfolio, test it with peers, and get the recognition it deserves.
       </p>
-      <div class="org-pivot" style="margin-top:0; margin-bottom:28px;">
-        <p><strong>What happened:</strong> a result didn't match what was expected. <strong>First guess:</strong> the obvious cause was to blame. <strong>The nudge:</strong> a prompt to look one layer deeper. <strong>What was learned:</strong> the real cause was something else entirely. The valuable part was never the nudge — it was <strong>the change in understanding.</strong></p>
-      </div>
       <a href="#contact" class="btn-primary">Join the Community</a>
     </div>
     <div class="community-panel">
       <div class="panel-eyebrow">What you get</div>
       <ul class="panel-list">
         <li>A portfolio that shows how your thinking has grown — not just a list of tasks you did.</li>
-        <li>Short learning nudges that help you right when you need them — not another long course.</li>
-        <li>A peer network of engineers and operators sharing how they think, out in the open.</li>
+        <li>Short learning triggers that help you right when you need them.</li>
+        <li>A peer network of engineers and technicians sharing how they think, out in the open.</li>
         <li>A path from community member to becoming the learning lead inside your own organisation.</li>
       </ul>
     </div>
@@ -1462,57 +1089,34 @@ footer {
 </section>
 
 <!-- ============================================================
-     07. FOR ORGANISATIONS
+     06. WHAT WE HELP ORGANISATIONS ACHIEVE
 ============================================================ -->
 <section class="org" id="organisations">
   <div class="org-wrap">
     <div>
       <div class="entry-eyebrow">For Organisations</div>
       <h2 class="org-headline">
-        Remote-first learning, built into daily work.<br>
-        <em>Led by a practitioner.</em> Measurable. Scalable.
+        What We Help<br>
+        Organisations <em>Achieve.</em>
       </h2>
-      <p class="org-body">People solve problems every day. Teams adapt. Processes get better. Real learning happens all the time inside the work — but almost none of it gets written down, recognised, or reused.</p>
+      <p class="org-body">People solve problems every day. Teams adapt. Processes get better. Real learning happens all the time inside the work — but almost none of it gets captured, recognised, or reused.</p>
       <div class="org-pivot">
-        <p>PCTeoh Learning Lab helps you fix that — and shows you <strong>what you can build once you do.</strong> A team that learns as it works. Talent grows exactly where the real work happens.</p>
+        <p>We build the system that fixes that — one where <strong>a team learns as it works,</strong> and talent grows exactly where the real work happens.</p>
       </div>
       <a href="#contact" class="btn-primary" style="margin-top:24px; display:inline-block;">Enquiry</a>
     </div>
     <div class="org-traits">
-      <div class="org-trait">
-        <div class="trait-mark">R</div>
-        <div>
-          <div class="trait-text-name">Remote-first</div>
-          <div class="trait-text-desc">Delivered wherever your team already works. No classroom needed, no fixed location required.</div>
-        </div>
-      </div>
-      <div class="org-trait">
-        <div class="trait-mark">E</div>
-        <div>
-          <div class="trait-text-name">Practitioner-led</div>
-          <div class="trait-text-desc">Built and delivered by someone with 19 years of hands-on experience — not an outside training vendor.</div>
-        </div>
-      </div>
-      <div class="org-trait">
-        <div class="trait-mark">M</div>
-        <div>
-          <div class="trait-text-name">Measurable</div>
-          <div class="trait-text-desc">Every step follows the A2P framework: set a target, track the actions, measure the gap, and refine.</div>
-        </div>
-      </div>
-      <div class="org-trait">
-        <div class="trait-mark">S</div>
-        <div>
-          <div class="trait-text-name">Scalable</div>
-          <div class="trait-text-desc">Starts with one team, then grows into something the whole organisation can run on.</div>
-        </div>
-      </div>
+      <div class="org-trait"><div class="trait-mark">1</div><div><div class="trait-text-name">Develop technicians into engineers</div><div class="trait-text-desc">A structured path from doing to understanding.</div></div></div>
+      <div class="org-trait"><div class="trait-mark">2</div><div><div class="trait-text-name">Capture engineering experience</div><div class="trait-text-desc">Turn tacit know-how into shareable evidence.</div></div></div>
+      <div class="org-trait"><div class="trait-mark">3</div><div><div class="trait-text-name">Improve workplace learning</div><div class="trait-text-desc">Make reflection a normal part of the workday.</div></div></div>
+      <div class="org-trait"><div class="trait-mark">4</div><div><div class="trait-text-name">Build engineering capability</div><div class="trait-text-desc">Measurable growth, tied to real performance.</div></div></div>
+      <div class="org-trait"><div class="trait-mark">5</div><div><div class="trait-text-name">Support Work-Based Learning</div><div class="trait-text-desc">Learning built into the job, not away from it.</div></div></div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================
-     07B. FOR LEARNING INSTITUTIONS
+     07. FOR LEARNING INSTITUTIONS
 ============================================================ -->
 <section class="org org-institutions" id="institutions">
   <div class="org-wrap">
@@ -1522,200 +1126,109 @@ footer {
         Close the gap between<br>
         <em>graduate and professional.</em>
       </h2>
-      <p class="org-body">A curriculum can only prepare a graduate for day one. It's harder to prepare them for the years after. What separates a graduate from a working professional isn't more content — it's the habit of turning everyday work into visible, deliberate learning.</p>
+      <p class="org-body">A curriculum can only prepare a graduate for day one. What separates a graduate from a working professional isn't more content — it's the habit of turning everyday work into visible, deliberate learning.</p>
       <div class="org-pivot">
-        <p>PCTeoh Learning Lab works with institutions to build that habit into the curriculum itself — <strong>learning that graduates can carry straight into their jobs.</strong> Built on the same method used inside companies.</p>
+        <p>PCTeoh Learning Lab works with institutions to build that habit into the curriculum itself — <strong>learning that graduates can carry straight into their jobs.</strong></p>
       </div>
       <a href="#contact" class="btn-primary" style="margin-top:24px; display:inline-block;">Find out more</a>
     </div>
     <div class="org-traits">
-      <div class="org-trait">
-        <div class="trait-mark">I</div>
-        <div>
-          <div class="trait-text-name">Industry-aligned</div>
-          <div class="trait-text-desc">Courses and assessments shaped by what working professionals actually do, not just what's in the textbook.</div>
-        </div>
-      </div>
-      <div class="org-trait">
-        <div class="trait-mark">E</div>
-        <div>
-          <div class="trait-text-name">Employability-focused</div>
-          <div class="trait-text-desc">Graduates leave with a portfolio of real, proven skills — not just a transcript of finished courses.</div>
-        </div>
-      </div>
-      <div class="org-trait">
-        <div class="trait-mark">P</div>
-        <div>
-          <div class="trait-text-name">Partnership-based</div>
-          <div class="trait-text-desc">Designed together with your teaching staff and, where possible, industry partners — so it fits your institution, not the other way around.</div>
-        </div>
-      </div>
+      <div class="org-trait"><div class="trait-mark">I</div><div><div class="trait-text-name">Industry-aligned</div><div class="trait-text-desc">Shaped by what working professionals actually do.</div></div></div>
+      <div class="org-trait"><div class="trait-mark">E</div><div><div class="trait-text-name">Employability-focused</div><div class="trait-text-desc">Graduates leave with a portfolio of proven skills.</div></div></div>
+      <div class="org-trait"><div class="trait-mark">P</div><div><div class="trait-text-name">Partnership-based</div><div class="trait-text-desc">Designed together with your teaching staff and industry partners.</div></div></div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================
-     08. CORE DOCTRINE
-============================================================ -->
-<section class="doctrine" id="doctrine">
-  <div style="text-align:center; max-width:1200px; margin:0 auto 56px;">
-    <div class="section-tag">Core Doctrine</div>
-    <h2 class="section-title">Four principles that define the practice</h2>
-  </div>
-  <div class="doctrine-grid">
-    <div class="doctrine-card">
-      <div class="dc-num">01</div>
-      <div class="dc-title">Visibility <em>Comes Before</em> Performance</div>
-      <div class="dc-body">You can't improve what you can't see. Making work visible — writing it down, measuring it, recognising it — is the first step toward real development.</div>
-    </div>
-    <div class="doctrine-card">
-      <div class="dc-num">02</div>
-      <div class="dc-title">Failure as <em>Evidence</em></div>
-      <div class="dc-body">Every gap between what you aimed for and what you got is useful information. Failure isn't something to hide — it's the clearest signal you have. Bring it into the open and it becomes useful.</div>
-    </div>
-    <div class="doctrine-card">
-      <div class="dc-num">03</div>
-      <div class="dc-title">Learning <em>Inside</em> the Work</div>
-      <div class="dc-body">Development belongs in the workflow, not away from it. The work itself is the best place to learn — as long as it's made visible.</div>
-    </div>
-    <div class="doctrine-card">
-      <div class="dc-num">04</div>
-      <div class="dc-title">Deliberate <em>Growth</em></div>
-      <div class="dc-body">Talent doesn't grow by accident. When work is visible, you can see gaps, close them, and design growth on purpose.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     09. A2P FRAMEWORK
+     08. A2P FRAMEWORK — EXPANDED
 ============================================================ -->
 <section class="a2p-section" id="framework">
   <div style="text-align:center; max-width:1200px; margin:0 auto 56px;">
     <div class="section-tag">The A2P Framework</div>
-    <h2 class="section-title">Visibility turns Action to Performance</h2>
+    <h2 class="section-title">Action to Performance — and to Capability</h2>
+    <p class="section-intro" style="margin-left:auto; margin-right:auto;">Performance is no longer the only outcome. Learning is an outcome too.</p>
   </div>
-  <div class="a2p-flow">
-    <div class="a2p-step">
-      <div class="step-num-lg">01</div>
-      <div class="step-name-lg">Define Target</div>
-      <div class="step-desc">Make the destination visible. Establish what performance looks like in measurable terms.</div>
+  <div class="a2p-flow" style="grid-template-columns:repeat(7,1fr); max-width:1300px;">
+    <div class="a2p-step"><div class="step-num-lg">01</div><div class="step-name-lg">Action</div><div class="step-desc">A real task is carried out.</div></div>
+    <div class="a2p-step"><div class="step-num-lg">02</div><div class="step-name-lg">Evidence</div><div class="step-desc">The outcome is captured, not lost.</div></div>
+    <div class="a2p-step"><div class="step-num-lg">03</div><div class="step-name-lg">Analysis</div><div class="step-desc">The gap between target and result is examined.</div></div>
+    <div class="a2p-step"><div class="step-num-lg">04</div><div class="step-name-lg">Decision</div><div class="step-desc">A choice is made about what to do differently.</div></div>
+    <div class="a2p-step" style="background:rgba(220,170,107,0.1); border-color:rgba(220,170,107,0.4);"><div class="step-num-lg" style="color:var(--honey-gold);">05</div><div class="step-name-lg" style="color:var(--honey-gold);">Reflection</div><div class="step-desc" style="color:rgba(245,240,232,0.7);">Why did it happen this way? What does it mean?</div></div>
+    <div class="a2p-step"><div class="step-num-lg">06</div><div class="step-name-lg">Capability</div><div class="step-desc">A durable improvement in judgement.</div></div>
+    <div class="a2p-step"><div class="step-num-lg">07</div><div class="step-name-lg">Future Performance</div><div class="step-desc">Better action, next time round.</div></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     10. CHANGE 4: HOW ENGINEERS REALLY LEARN — COMPARISON PAGE
+============================================================ -->
+<section class="compare-learn">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="section-tag">The Signature Page</div>
+    <h2 class="section-title">How Engineers Really Learn</h2>
+    <p class="section-intro">The traditional belief versus the IOL approach — side by side.</p>
+  </div>
+  <div class="compare-grid">
+    <div class="compare-col">
+      <div class="compare-label">Traditional Belief</div>
+      <div class="compare-chain">
+        <div class="compare-node">Lecture</div>
+        <div class="compare-arrow">↓</div>
+        <div class="compare-node">Knowledge</div>
+        <div class="compare-arrow">↓</div>
+        <div class="compare-node">Examination</div>
+      </div>
     </div>
-    <div class="a2p-step">
-      <div class="step-num-lg">02</div>
-      <div class="step-name-lg">Identify Actions</div>
-      <div class="step-desc">Make the path visible. Map the specific behaviours that drive the target outcome.</div>
-    </div>
-    <div class="a2p-step">
-      <div class="step-num-lg">03</div>
-      <div class="step-name-lg">Execute</div>
-      <div class="step-desc">Make the work visible. Deploy actions inside real work — not simulations, not classrooms.</div>
-    </div>
-    <div class="a2p-step">
-      <div class="step-num-lg">04</div>
-      <div class="step-name-lg">Measure</div>
-      <div class="step-desc">Make the result visible. Capture performance data against the defined target.</div>
-    </div>
-    <div class="a2p-step">
-      <div class="step-num-lg">05</div>
-      <div class="step-name-lg">Analyse Gap</div>
-      <div class="step-desc">Make the learning visible. Understand what the difference between result and target reveals.</div>
-    </div>
-    <div class="a2p-step">
-      <div class="step-num-lg">06</div>
-      <div class="step-name-lg">Refine</div>
-      <div class="step-desc">Make the development deliberate. Adjust actions and repeat. The cycle is the system.</div>
+    <div class="compare-col is-iol">
+      <div class="compare-label">The IOL Approach</div>
+      <div class="compare-chain">
+        <div class="compare-node">Work Event</div>
+        <div class="compare-arrow">↓</div>
+        <div class="compare-node">Thinking</div>
+        <div class="compare-arrow">↓</div>
+        <div class="compare-node">Learning Capsule</div>
+        <div class="compare-arrow">↓</div>
+        <div class="compare-node">Reflection</div>
+        <div class="compare-arrow">↓</div>
+        <div class="compare-node">Application</div>
+        <div class="compare-arrow">↓</div>
+        <div class="compare-node">Capability</div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================
-     10. THREE ENTRY POINTS
+     08. PHILOSOPHY — the one vital statement
 ============================================================ -->
-<section class="entry-points" id="entry-points">
-  <div style="max-width:1200px; margin:0 auto 56px;">
-    <div class="section-tag">One Connected System</div>
-    <h2 class="section-title">Three identities. One practice.</h2>
-  </div>
-  <div class="ep-grid">
-    <div class="ep-card">
-      <div class="ep-icon">P</div>
-      <div class="ep-label">The Entity</div>
-      <div class="ep-name">PCTeoh Learning Lab</div>
-      <div class="ep-desc">The registered operational home of the practice. Where the work of making work visible is contracted, delivered, and sustained.</div>
-    </div>
-    <div class="ep-card">
-      <div class="ep-icon">I</div>
-      <div class="ep-label">The Methodology</div>
-      <div class="ep-name">Industry Oriented Learning</div>
-      <div class="ep-desc">The IOL framework — a structured system for making workplace learning visible through documentation, digitization, measurement, and recognition inside real work.</div>
-    </div>
-    <div class="ep-card">
-      <div class="ep-icon">G</div>
-      <div class="ep-label">The Practitioner Brand</div>
-      <div class="ep-name">Grow at Work</div>
-      <div class="ep-desc">The individual-facing identity. The driving force for individual to involve in digitization. The promise to every engineer and operator: your work is visible, your learning counts, your development is deliberate.</div>
-    </div>
+<section class="philosophy" id="philosophy">
+  <div class="section-tag">Philosophy</div>
+  <div class="philosophy-statement">
+    We do not design curriculum for work.<br>We design <em>work</em> that develops <em>capability</em>.
   </div>
 </section>
 
 <!-- ============================================================
-     11. BRAND STRIP
-============================================================ -->
-<div class="brand-strip">
-  <div class="brand-id">
-    <div class="brand-id-name">PCTeoh Learning Lab</div>
-    <div class="brand-id-role">The Entity</div>
-  </div>
-  <div class="brand-sep"></div>
-  <div class="brand-id">
-    <div class="brand-id-name">IOL</div>
-    <div class="brand-id-role">The Methodology</div>
-  </div>
-  <div class="brand-sep"></div>
-  <div class="brand-id">
-    <div class="brand-id-name">Grow at Work</div>
-    <div class="brand-id-role">The Engineer Brand</div>
-  </div>
-</div>
-
-<!-- ============================================================
-     12. MANIFESTO
-============================================================ -->
-<section class="manifesto">
-  <div class="manifesto-quote">
-    "We help make learning at work visible — through simple digital tools and AI, turning everyday know-how into real, measurable performance."
-  </div>
-  <div class="manifesto-attr">PC Teoh &middot; Founding Practitioner</div>
-</section>
-
-<!-- ============================================================
-     14. ABOUT
+     09. ABOUT — human introduction
 ============================================================ -->
 <section id="about">
   <div class="about-wrap">
     <div class="about">
-      <div class="about-portrait">
-        <div class="portrait-ph">PC</div>
-      </div>
+      <div class="about-portrait"><div class="portrait-ph">PC</div></div>
       <div>
-        <div class="about-eyebrow">The Founder</div>
+        <div class="about-eyebrow">About PC Teoh</div>
         <h2 class="about-name">Teoh Ping Chow</h2>
         <div class="about-cred">PhD in Manufacturing Engineering</div>
         <p class="about-body">
-         19 years of industry experience in engineering and knowledge management, plus 15 years teaching working adults through Open and Distance Learning. Focused on closing the gap between formal education and career growth — helping working adults build new skills and get recognised for them, no matter their prior qualifications.
+          After nearly twenty years in industry and over fifteen years in higher education, I have come to believe that the best learning does not begin in the classroom, it begins in the workplace.
         </p>
         <p class="about-body">
-          The IOL method was built on the factory floor — in the space between what a graduate knows and what a working professional actually does.
+          Through PCTeoh Learning Lab, I help individuals learn from the work they do every day, organisations develop and retain capability, and educational institutions connect learning more closely with industry.
         </p>
         <div class="stats-row">
-          <div class="stat">
-            <div class="stat-num">19</div>
-            <div class="stat-label">Years in Industry</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">15</div>
-            <div class="stat-label">Years in Education</div>
-          </div>
+          <div class="stat"><div class="stat-num">19</div><div class="stat-label">Years in Industry</div></div>
+          <div class="stat"><div class="stat-num">15</div><div class="stat-label">Years in Education</div></div>
         </div>
       </div>
     </div>
@@ -1728,15 +1241,11 @@ footer {
 <section class="contact-cta" id="contact">
   <div class="cta-inner">
     <div class="cta-label">Collaborative Engagement</div>
-    <h2 class="cta-headline">
-      Let's make your<br>learning at work <em>visible.</em>
-    </h2>
+    <h2 class="cta-headline">Let's make your workplace<br>the <em>learning origin.</em></h2>
     <p class="cta-sub">
-      Organisations: we're looking for teams with a real skills gap — willing to work through it with us and share what we learn along the way. Professionals: the community is open now.
+      A future where every workplace becomes a learning environment, every engineer grows through authentic work, and every organisation develops capability continuously. Organisations and institutions: let's start with your team's real skills gap.
     </p>
-    <a href="https://wa.me/60164139982" target="_blank" class="cta-contact">
-      WhatsApp +60 16 413 9982
-    </a>
+    <a href="https://wa.me/60164139982" target="_blank" class="cta-contact">WhatsApp +60 16 413 9982</a>
   </div>
 </section>
 
@@ -1750,7 +1259,7 @@ footer {
     PCTeoh Learning Lab, Malaysia. Based in Penang. Works everywhere.<br>
     CC BY-NC-SA 4.0 &middot; SSM Registered &middot; HRDC Provisionally Registered
   </div>
-  <div class="footer-right">IOL &middot; A2P &middot; Grow at Work</div>
+  <div class="footer-right">IOL &middot; A2P &middot; Turning Work into Classrooms</div>
 </footer>
 
 </body>
