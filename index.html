@@ -762,14 +762,14 @@ nav {
 .manifesto-attr::after { content: ''; display: block; width: 40px; height: 1px; background: rgba(184,124,79,0.3); }
 
 /* Philosophy statement */
-.philosophy { padding: 100px 80px; background: var(--espresso); text-align: center; }
-.philosophy .section-tag { color: var(--honey-gold); justify-content: center; display: flex; }
-.philosophy-statement {
-  font-family: var(--serif); font-size: clamp(24px, 3.2vw, 40px); font-weight: 300;
-  line-height: 1.5; color: var(--cream-bg); letter-spacing: -0.4px;
-  max-width: 820px; margin: 24px auto 0;
+.why-exists { padding: 100px 80px; background: var(--cream-dark); }
+.why-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+.why-statement {
+  font-family: var(--serif); font-size: 17px; font-weight: 300; font-style: italic;
+  line-height: 1.75; color: var(--bark); letter-spacing: -0.1px; margin-top: 22px;
 }
-.philosophy-statement em { font-style: italic; color: var(--honey-gold); }
+.why-statement:first-of-type { margin-top: 22px; }
+.why-emphasis { color: var(--espresso); font-weight: 400; }
 
 /* How Engineers Really Learn comparison */
 .compare-learn { padding: 96px 80px; }
@@ -863,7 +863,6 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
   .ep-grid { grid-template-columns: 1fr; }
   .brand-strip { padding: 48px 24px; gap: 40px; }
   .brand-sep { display: none; }
-  .philosophy { padding: 60px 24px; }
   .compare-learn { padding: 60px 24px; }
   .compare-grid { grid-template-columns: 1fr; }
   .about-wrap { padding: 60px 24px; }
@@ -892,7 +891,7 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
      01. BUSINESS CARD SHOWCASE
 ============================================================ -->
 <section class="card-showcase">
-  <div class="showcase-eyebrow">Executive Business Card — Scroll down for full details</div>
+  <div class="showcase-eyebrow">A Note on How to Reach Me</div>
   <div class="cards-row">
     <div class="card-module">
       <div class="face-label">FRONT</div>
@@ -918,7 +917,7 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
                 <div class="person-fullname">Teoh Ping Chow</div>
                 <div class="person-title">PhD in Manufacturing Engineering</div>
               </div>
-              <div class="role-architect">Learning System Architect</div>
+              <div class="role-architect">Founder, PCTeoh Learning Lab</div>
               <div class="refined-divider"></div>
               <div class="tagline-updated">Industry Oriented Learning (IOL)</div>
             </div>
@@ -967,7 +966,7 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
     <li><a href="#individuals">Individuals</a></li>
     <li><a href="#organisations">Organisations</a></li>
     <li><a href="#institutions">Institutions</a></li>
-    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#why">Why This Exists</a></li>
     <li><a href="#about">About</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Start a Conversation</a>
@@ -987,14 +986,12 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
       <em>Learning Origin.</em>
     </h1>
     <p class="hero-sub">
-      Helping engineers and organisations grow through real work. PCTeoh Learning Lab helps companies transform authentic workplace experiences into measurable engineering capability.
+      Some of the most valuable learning happens while people are doing real work, yet much of it stays invisible. PCTeoh Learning Lab exists to make it visible, through Industry Oriented Learning (IOL) and the A2P framework.
     </p>
     <div class="hero-tags">Engineering Improvement &middot; Workplace Learning &middot; Industry–Academia Integration</div>
     <div class="hero-cta-row">
       <a href="#how-it-works" class="btn-primary">How It Works</a>
-      <a href="#individuals" class="btn-secondary">For Individuals</a>
       <a href="#organisations" class="btn-secondary">For Organisations</a>
-      <a href="#institutions" class="btn-secondary">For Institutions</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -1072,16 +1069,16 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
         <em>Become the learning lead</em> in your organisation.
       </h2>
       <p class="community-body">
-        Your daily work already proves what you can do — not because it's written down, but because your thinking changed while you did it. Join the community to turn that into a portfolio, test it with peers, and get the recognition it deserves.
+        Your daily work already proves what you can do, not because it's written down, but because your thinking changed while you did it. If that resonates, I'd welcome you into the community: turn that into a portfolio, test your thinking with peers, and be recognised for it.
       </p>
       <a href="#contact" class="btn-primary">Join the Community</a>
     </div>
     <div class="community-panel">
       <div class="panel-eyebrow">What you get</div>
       <ul class="panel-list">
-        <li>A portfolio that shows how your thinking has grown — not just a list of tasks you did.</li>
+        <li>A portfolio that shows how your thinking has grown, not just a list of tasks you did.</li>
         <li>Short learning triggers that help you right when you need them.</li>
-        <li>A peer network of engineers and technicians sharing how they think, out in the open.</li>
+        <li>A peer network of engineers and operators sharing how they think, out in the open.</li>
         <li>A path from community member to becoming the learning lead inside your own organisation.</li>
       </ul>
     </div>
@@ -1096,14 +1093,14 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
     <div>
       <div class="entry-eyebrow">For Organisations</div>
       <h2 class="org-headline">
-        What We Help<br>
-        Organisations <em>Achieve.</em>
+        If You See Work<br>
+        as a Place to <em>Learn.</em>
       </h2>
-      <p class="org-body">People solve problems every day. Teams adapt. Processes get better. Real learning happens all the time inside the work — but almost none of it gets captured, recognised, or reused.</p>
+      <p class="org-body">People solve problems every day. Teams adapt. Processes get better. Real learning happens all the time inside the work, but almost none of it gets captured, recognised, or reused.</p>
       <div class="org-pivot">
-        <p>We build the system that fixes that — one where <strong>a team learns as it works,</strong> and talent grows exactly where the real work happens.</p>
+        <p>I would like to work with organisations who want to change that, where <strong>a team learns as it works,</strong> and talent grows exactly where the real work happens.</p>
       </div>
-      <a href="#contact" class="btn-primary" style="margin-top:24px; display:inline-block;">Enquiry</a>
+      <a href="#contact" class="btn-primary" style="margin-top:24px; display:inline-block;">Start a Conversation</a>
     </div>
     <div class="org-traits">
       <div class="org-trait"><div class="trait-mark">1</div><div><div class="trait-text-name">Develop technicians into engineers</div><div class="trait-text-desc">A structured path from doing to understanding.</div></div></div>
@@ -1123,14 +1120,14 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
     <div>
       <div class="entry-eyebrow">For Learning Institutions</div>
       <h2 class="org-headline">
-        Close the gap between<br>
-        <em>graduate and professional.</em>
+        Closing the Gap Between<br>
+        <em>Graduate and Professional.</em>
       </h2>
       <p class="org-body">A curriculum can only prepare a graduate for day one. What separates a graduate from a working professional isn't more content — it's the habit of turning everyday work into visible, deliberate learning.</p>
       <div class="org-pivot">
-        <p>PCTeoh Learning Lab works with institutions to build that habit into the curriculum itself — <strong>learning that graduates can carry straight into their jobs.</strong></p>
+        <p>I would welcome the chance to build that habit into a curriculum together - <strong>learning that graduates can carry straight into their jobs.</strong></p>
       </div>
-      <a href="#contact" class="btn-primary" style="margin-top:24px; display:inline-block;">Find out more</a>
+      <a href="#contact" class="btn-primary" style="margin-top:24px; display:inline-block;">Start a Conversation</a>
     </div>
     <div class="org-traits">
       <div class="org-trait"><div class="trait-mark">I</div><div><div class="trait-text-name">Industry-aligned</div><div class="trait-text-desc">Shaped by what working professionals actually do.</div></div></div>
@@ -1158,6 +1155,9 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
     <div class="a2p-step"><div class="step-num-lg">06</div><div class="step-name-lg">Capability</div><div class="step-desc">A durable improvement in judgement.</div></div>
     <div class="a2p-step"><div class="step-num-lg">07</div><div class="step-name-lg">Future Performance</div><div class="step-desc">Better action, next time round.</div></div>
   </div>
+  <div style="max-width:800px; margin:48px auto 0; text-align:center; font-family:var(--serif); font-style:italic; font-size:19px; line-height:1.6; color:var(--honey-gold);">
+    We do not design curriculum for work. We design work that develops capability.
+  </div>
 </section>
 
 <!-- ============================================================
@@ -1165,7 +1165,7 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
 ============================================================ -->
 <section class="compare-learn">
   <div style="max-width:1200px; margin:0 auto;">
-    <div class="section-tag">The Signature Page</div>
+    <div class="section-tag">Two Ways to Learn</div>
     <h2 class="section-title">How Engineers Really Learn</h2>
     <p class="section-intro">The traditional belief versus the IOL approach — side by side.</p>
   </div>
@@ -1200,12 +1200,26 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
 </section>
 
 <!-- ============================================================
-     08. PHILOSOPHY — the one vital statement
+     08B. WHY THIS EXISTS — the personal declaration
 ============================================================ -->
-<section class="philosophy" id="philosophy">
-  <div class="section-tag">Philosophy</div>
-  <div class="philosophy-statement">
-    We do not design curriculum for work.<br>We design <em>work</em> that develops <em>capability</em>.
+<section class="why-exists" id="why">
+  <div class="why-inner">
+    <div class="section-tag" style="justify-content:center; display:flex;">Why This Exists</div>
+    <p class="why-statement">
+      Over the years, I have become convinced that some of the most valuable learning happens while people are doing real work. Yet much of that learning remains invisible.
+    </p>
+    <p class="why-statement">
+      I hope to contribute to a growing movement that recognises the workplace not only as a place of production, but also as a place of learning.
+    </p>
+    <p class="why-statement">
+      To support this work, I established PCTeoh Learning Lab. It allows me to remain independent, keep learning, collaborate with organisations, and sustain this effort over the long term.
+    </p>
+    <p class="why-statement why-emphasis">
+      It is not about building a large company. It is about creating a sustainable way to keep contributing.
+    </p>
+    <p class="why-statement">
+      If, along the way, this work creates value for organisations, educators, and professionals, it will also create the sustainability I need to continue the journey.
+    </p>
   </div>
 </section>
 
@@ -1240,10 +1254,10 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
 ============================================================ -->
 <section class="contact-cta" id="contact">
   <div class="cta-inner">
-    <div class="cta-label">Collaborative Engagement</div>
-    <h2 class="cta-headline">Let's make your workplace<br>the <em>learning origin.</em></h2>
+    <div class="cta-label">An Invitation</div>
+    <h2 class="cta-headline">Looking for<br><em>right-minded collaborators.</em></h2>
     <p class="cta-sub">
-      A future where every workplace becomes a learning environment, every engineer grows through authentic work, and every organisation develops capability continuously. Organisations and institutions: let's start with your team's real skills gap.
+      If you also see the workplace as a place of learning, not only production, I would like to hear from you. Whether you're an individual, an organisation, or an institution, this works best as a conversation.
     </p>
     <a href="https://wa.me/60164139982" target="_blank" class="cta-contact">WhatsApp +60 16 413 9982</a>
   </div>
@@ -1259,7 +1273,7 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
     PCTeoh Learning Lab, Malaysia. Based in Penang. Works everywhere.<br>
     CC BY-NC-SA 4.0 &middot; SSM Registered &middot; HRDC Provisionally Registered
   </div>
-  <div class="footer-right">IOL &middot; A2P &middot; Turning Work into Classrooms</div>
+  <div class="footer-right">IOL &middot; A2P &middot; Workplace as the Learning Origin</div>
 </footer>
 
 </body>
