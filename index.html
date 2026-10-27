@@ -883,6 +883,37 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
   .a2p-ring { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ============================================================
+   SAVE CONTACT BUTTON STYLING
+============================================================ */
+.save-contact-btn {
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--cream-bg);
+  background: var(--espresso);
+  border: 1px solid var(--cognac);
+  padding: 12px 24px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.save-contact-btn:hover {
+  background: var(--cognac);
+  color: var(--cream-bg);
+  transform: translateY(-2px);
+}
+
 </style>
 </head>
 <body>
@@ -891,7 +922,8 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
      01. BUSINESS CARD SHOWCASE
 ============================================================ -->
 <section class="card-showcase">
-  <div class="showcase-eyebrow">A Note on How to Reach Me</div>
+
+<div class="showcase-eyebrow">Digital Business Card</div>
   <div class="cards-row">
     <div class="card-module">
       <div class="face-label">FRONT</div>
@@ -954,6 +986,14 @@ footer { background: #1A1410; padding: 40px 80px; display: flex; align-items: ce
       </div>
     </div>
   </div>
+
+<!-- ============================================================
+       NEW SAVE TO CONTACTS BUTTON PLACEMENT
+  ============================================================ -->
+  <a href="contact.vcf" download="Teoh_Ping_Chow_Contact.vcf" class="save-contact-btn">
+    📱 Add to Phone Contacts
+  </a>
+
 </section>
 
 <!-- ============================================================
